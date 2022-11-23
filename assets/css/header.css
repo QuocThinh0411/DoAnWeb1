@@ -1,11 +1,17 @@
 
+.row{
+    float: left;
+    width: 100%;
+}
+
 #nav > li {
     display: inline-block;
 }
 #nav > li > a{
     color: #295f2d;
     text-transform: uppercase;
-    font-size: 22px;    
+    font-size: 18px;    
+    
 }
 
 #nav > li > a > img{
@@ -34,7 +40,7 @@
     color: #295f2d; 
   }
 
-#header{
+header{
     background-color: #FFDE59;
     width: 100%;
     position: fixed;
@@ -66,9 +72,45 @@
     width: 72%;
 
 }
+#search-box{
+    background-color: #fff;
+    border-radius: 30px;
+    
+    
+}
+#search-box #search-text{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+    width: 0;
+    
+    transition: all 0.25s ease-in-out;
+      
+   
+}
+#search-box:hover #search-text{
+    width: 250px;
+    padding: 10px 0px 10px 10px;
+       
+}
 
-.search-icon{
-    padding: 0px 0px 0px 250px;
+
+#search-box #search-btn{
+        
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+#logo {
+    min-width: 100px;
+    min-height: 50px;
+}
+#none{
+    width: 50px;
 }
 
 

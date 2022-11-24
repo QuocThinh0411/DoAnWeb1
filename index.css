@@ -1,0 +1,94 @@
+.row{
+    float: left;
+    width: 100%;
+}
+
+#info{
+    float: left;
+    width: 40%;
+    background-color: rgb(230, 227, 109);
+    min-height: 250px;
+    margin: 5% 5% 5% 5%;
+    border: 15px ridge rgb(241, 239, 69);
+    border-radius: 15px;
+
+}
+
+.h2center{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 50px 0px ;   
+  
+}
+
+#info p{
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+}
+#buy{
+    float: left;
+    width: 30%;
+    background-color: blue;
+    min-height: 250px;
+    margin: 5% 5% 5% 5%;
+    padding: 15px;
+    align-items: center;
+    border-radius: 15px;
+    
+}
+#buy #left{
+    text-align: start;
+}
+#buy #right{
+    text-align: end;
+}
+#buy #btn{
+min-height: 100px;
+min-width: 100px;
+margin: 20px 40%;
+
+}
+#buy #btn a{
+    text-align: center;
+    font-size: 25px;
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+#noibat{
+    text-align: center;
+    margin: 15px 0px;
+    padding: 20px;
+}
+#khuyenmai{
+    text-align: center;
+    margin: 15px 0px;
+
+}
+hr{
+    width: 5%;
+    size: 5px;
+    color: aliceblue;
+}
+.sanpham{
+    
+    text-align: center;
+    width: 25%;
+    padding: 10px;
+     float: left;
+    box-sizing: border-box;
+    border-radius: 15px;
+    
+    
+}
+.sanpham img{
+    height: 280px;
+    border-radius: 15px;
+
+}
+.sanpham:hover{
+    opacity: 70%;
+}
+
+    

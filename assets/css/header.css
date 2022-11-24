@@ -129,4 +129,5 @@ p {
 th{
     width: 25%;
     height: 120px;
+    --bs-link-hover-color: #F9d342;
 }

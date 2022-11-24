@@ -1,0 +1,6 @@
+.dieuhuong{
+  color: inherit;
+  font: inherit;
+  height: 100px;
+  margin-left: 100pt;
+}  

@@ -285,8 +285,8 @@
       font-family: NunitoSanSBoldI;
       font-size: 16px;
       color: #808080;
-      font-weight: bold;
       margin-bottom: 40px;
+
     }
     .header .nav li.dropdown.open .dropdown-menu.style2 .style2-divider {
       width: 2px;
@@ -1958,8 +1958,10 @@
     /* 1st level */
     .left-tree .nav .nav-header {
       color: #000;
-      font-family: GeometricExtraBold;
-      font-size: 23px;
+      /* font-family: GeometricExtraBold;
+       */
+    
+      font-size: 18px;
       margin-top:30px;
     }
     .left-tree .nav .nav-header.orange {
@@ -2010,7 +2012,7 @@
     }
     .left-tree .tree li label{
       padding: 6px 0px 6px 20px;
-      font-family: NunitoSanRegular;
+      font-family: inherit;
       font-size: 16px;
     }
     .left-tree .nav .nav-divider {
@@ -2271,13 +2273,13 @@
     display: block;
   }
   .prd1-right-items .thumbnail .cont-item img.ihover {
-    display: none;
+    opacity: 0.9;
   }
   .prd1-right-items .thumbnail:hover .cont-item img.inormal {
-    display: none;
+    opacity: 0.9;
   }
   .prd1-right-items .thumbnail:hover .cont-item img.ihover {
-    display: block;
+    opacity: 0.9;
   }
   
   .thumbnail .tag-blue,
@@ -2389,6 +2391,8 @@
     font-family: NunitoSanExtraBold;
     font-size: 16px;
     color: #000;
+    --bs-link-hover-color: #F9d342;
+    
   }
   .prd1-right-items .post-name {
     font-family: GeometricExtraBold;
@@ -7514,5 +7518,19 @@
       text-align: right;
     }
   }
-  
-  /* ------------- End Popup Reason Cancel Order ------------------ */
+
+  .inormal {
+    width: 90%;
+    margin: 10px;
+    
+  }
+  .thumbnail2 .caption .name  {
+    font-size: 20px;
+    text-align: center;
+  }
+  .thumbnail2 .caption .price  {
+    font-size: 16px;
+    text-align: center;
+  }
+
+    /* ------------- End Popup Reason Cancel Order ------------------ */

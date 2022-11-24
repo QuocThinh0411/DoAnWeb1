@@ -1,7 +1,7 @@
 
 .row{
     float: left;
-    width: 101%;
+    width: 100%;
 }
 
 #nav > li {
@@ -41,7 +41,7 @@
   }
 
 
-header{
+#header{
     text-align: center;
     background-color: #FFDE59;
     width: 100%;
@@ -51,7 +51,7 @@ header{
     top: 0;
     right: 0;
     left: 0;
-    z-index: 999;
+   
 }
 #nav li:hover .subnav {
     display: block;

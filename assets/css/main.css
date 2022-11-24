@@ -7,21 +7,23 @@ h1{
     font-size: 45px;
     font-weight: bolder;
     text-transform: uppercase;
-    color: #ec4d37;
+    color: #0a0a0a;
+   
 }
 h2{
     font-size: 35px;
     font-weight: bolder;
-    color: #ec4d37;
+    color: #020202;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 h3{
     font-size: 25px;
-    color: #ec4d37;
+    color: #000000;
 }
 
 p{
     font-size: 16px;
-    color: #F9d342;
+    color: #050505;
     font-weight:900
 }
 

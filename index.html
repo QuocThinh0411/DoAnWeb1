@@ -7,19 +7,19 @@
     <title>Sun Happy</title>
     <!-- file css riêng của mỗi layout -->
     <link href="./assets/css/home.css" rel="stylesheet">
-    <!-- file css chung: main -->
+    <!-- file css chung để lấy size,font: main -->
     <link href="main.css" rel="stylesheet">
     <!-- file css để lấy thư viện icon -->
     <link href="./assets/font_icon/themify-icons/themify-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="../DoAnWeb1/assets/css/substyle2" type="text/css">
-    <link rel="stylesheet" href="../DoAnWeb1/assets/css/substyle.css" type="text/css">
-    <link rel="stylesheet"  href="../DoAnWeb1/assets/bootstrap/css/bootstrap.css" type="text/css">
+    <!-- file css header -->
+    <link rel="stylesheet" href="./assets/css/header.css">
 </head>
 <body>
     
-        <div id="header">
+        <header class="row">
             <ul id="nav">
-                <li><a href="">Logo</a></li>
+                <li><a href="index.html"><img id="logo" src="./assets/image/logo (7).png"></a></li>
+                <li id="none"></li>
                 <li>
                     <a href=""> Danh sách 
                         <i class="ti-angle-down"></i>
@@ -32,15 +32,30 @@
                 </li>
                 <li><a href="">About us</a></li>
                 <li><a href="">Khuyễn Mãi</a></li>
-                <li><a href=""><i class="search-icon ti-search"></i></a></li>    
+                <li id="none"></li>
+                <li>
+                     <form action="" id="search-box">
+                        
+                        <input placeholder="Điền tên sản phẩm" type="text" id="search-text">
+                        <button id="search-btn"><i class="ti-search"></i></button>
+                    </form>
+                </li>
+                
                 <li><a href=""><i class="shopping-cart-icon ti-shopping-cart"></i></a></li>
                 <li><a href=""><i class="user-icon ti-user"></i></a></li>
             </ul>
-          </div>
-
-        <div id="body"></div>
+        </header>
+        <hr> <hr> <hr> <hr> <hr> <hr>
+            <article>
+               
+            </article>
+      
+     
         
-        <div id="footer" >     </div>
+
+        <footer class="row">     </footer>
+       
+       
 
 </body>
 </html>

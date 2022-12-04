@@ -6,5 +6,5 @@ File css giao diện bỏ ở folder assets/css
 
 File ảnh sản phẩm lấy từ assets/image
 
-
+Bla Bla Bla
 ...

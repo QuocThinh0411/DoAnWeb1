@@ -30,6 +30,11 @@ h1
     align-content: center;
     border-radius: 10px;
     box-shadow: 1px 2px 6px 2px rgb(219, 219, 219);
+
+}
+#box img{
+    width: 50%;
+    height: 70%;
 }
 #box:hover
 {
@@ -66,21 +71,3 @@ h2
     color: rgb(3, 94, 94);
 }
 
-.badge--sale {
-    margin: 20px 1000px 100px 50px;
-}
-.badge {
-    background-color:orange;
-    position: absolute;
-}
-.badge span {
-    height: 55px;
-    width: 55px;
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-    padding: 3px;
-   border-radius: 50%;
-    font-size: 13px;
-    color: #fff;
-}

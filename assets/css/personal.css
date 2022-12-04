@@ -1,0 +1,31 @@
+
+
+.container_left
+{
+    display: grid;
+    grid-gap: 70px 50px;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 40px;
+    float: left;
+  
+   
+}
+.container_right{
+    display: grid;
+    grid-gap: 70px 50px;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 40px;
+    float: right;
+}
+.box 
+{
+    width: 40%;
+    background-color: white;
+    align-content: center;
+    float: left;
+}
+.sidebar{
+    display: flexbox;
+}

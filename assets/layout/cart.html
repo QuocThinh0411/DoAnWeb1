@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giỏ hàng</title>
+  <link rel="stylesheet" href="../css/cart.css">
+  <link rel="stylesheet" type="text/css" href="../font_icon/fontawesome-free-6.2.1-web/css/all.min.css">
+</head>
+
+<body>
+
+  <main class="container">
+
+    <h1 class="heading">
+      <ion-icon name="cart-outline"></ion-icon> Giỏ hàng
+    </h1>
+
+    <div class="item-flex">
+      <section class="checkout">
+
+        <h2 class="section-heading">Thông tin thanh toán</h2>
+
+        <div class="payment-form">
+
+          <form action="#">
+
+            <div class="name">
+              <label for="name" class="label-default" value>Họ và tên</label>
+              <input type="text" name="name" id="name" class="input-default">
+            </div>
+
+            <div class="phone-number">
+              <label for="phone-number" class="label-default">Số điện thoại</label>
+              <input type="number" name="card-number" id="card-number" class="input-default">
+            </div>
+            <div class="address">
+                <label for="address" class="label-default">Địa chỉ giao hàng</label>
+                <table>
+                    <tr>
+                        <td>
+                            <form>
+                                <select name="Tinh" class="input-default" style="font-size: 14px; padding: 12px 15px ; border: none; margin-right: 20px;">
+                                <option value="">Chọn Tỉnh/Thành phố</option>
+                                <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+                                <option value="Hà Nội">Hà Nội</option>
+                                <option value="Gia Lai">Gia Lai</option>
+                                </select>
+                                </form>
+                        </td>
+                        <td>
+                            <form >
+                                <select name="Quan-Huyen" class="input-default" style="font-size: 14px; padding: 12px 15px ; border: none; margin-right: 20px;">
+                                <option value="">Chọn Quận/Huyện</option>
+                                <option value="Quận 1">Quận 1</option>
+                                <option value="Quận 2">Quận 2</option>
+                                <option value="Quận 3">Quận 3</option>
+                                </select>
+                                </form>
+                        </td>
+                        <td>
+                            <form>
+                                <select name="Thixa" class="input-default" style="font-size: 14px; padding: 12px 15px ; border: none; margin-right: 20px;">
+                                <option value="">Chọn Phường/Xã</option>
+                                <option value="Phường Bến Nghé">Phường Bến Nghé</option>
+                                <option value="Phường Bến Nghé">Phường Bến Nghé</option>
+                                <option value="Phường Bến Nghé">Phường Bến Nghé</option>
+                                </select>
+                                </form>
+                        </td>
+                    </tr>
+                </table>
+            </div> <br>
+            <div class="address-number">
+                <label for="address-number" class="label-default">Số nhà cụ thể</label>
+                <input type="address-number" name="address-number" id="address-number" class="input-default">
+              </div>
+
+          </form>
+
+        </div>
+        <label for="name" class="label-default" value>Phương thức thanh toán</label>
+        <div class="payment-form">
+
+            <div class="payment-method">
+  
+              <button class="method selected">
+                <span>Thanh toán khi nhận hàng</span>
+  
+                <ion-icon class="checkmark fill" name="checkmark-circle"></ion-icon>
+              </button> <br>
+              <button class="method">
+  
+                <span>Ví điện tử ZaloPay</span>
+  
+                <ion-icon class="checkmark" name="checkmark-circle-outline"></ion-icon>
+              </button>
+  
+            </div>
+            <div class="payment-form">
+
+                <div class="payment-method">
+                  <button class="method">
+                    <span>Thanh toán momo</span>
+                    <ion-icon class="checkmark" name="checkmark-circle-outline"></ion-icon>
+                  </button>
+      
+                </div>
+        <button class="btn btn-primary">
+          <b>Đặt hàng</b></span>
+        </button>
+
+      </section>
+      <section class="cart">
+
+        <div class="cart-item-box">
+
+          <h2 class="section-heading">Chi tiết đơn hàng</h2>
+
+          <div class="product-card">
+
+            <div class="card">
+
+              <div class="img-box">
+                <img src="../image/aopolo1.jpg" alt="Áo polo" width="80px" class="product-img">
+              </div>
+
+              <div class="detail">
+
+                <h4 class="product-name">Áo Polo</h4>
+                <table>
+                    <tr>
+                        <td>
+                            <form>
+                                <select name="color-product" class="input-default" style="font-size: 14px; padding: 10px ; border: none; margin-right: 20px;">
+                                <option value="Xám">Xám</option>
+                                <option value="Trắng">Trắng</option>
+                                <option value="Đen">Đen</option>
+                                </select>
+                                </form>
+                        </td>
+                        <td>
+                            <form>
+                                <select name="size-product" class="input-default" style="font-size: 14px; padding: 10px ; border: none; margin-right: 20px;">
+                                
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                                </select>
+                                </form>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+
+                <div class="wrapper">
+
+                  <div class="product-qty">
+                    <button id="decrement">
+                      <ion-icon name="remove-outline"></ion-icon>
+                    </button>
+
+                    <span id="quantity">1</span>
+
+                    <button id="increment">
+                      <ion-icon name="add-outline"></ion-icon>
+                    </button>
+                  </div>
+
+                  <div class="price">
+                    <span id="price">189.000 đ</span>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <button class="product-close-btn">
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+            </div>
+
+          </div>
+
+          <div class="product-card">
+
+            <div class="card">
+
+              <div class="img-box">
+                <img src="../image/aothun.jpg" alt="Áo thun" width="80px" class="product-img">
+              </div>
+
+              <div class="detail">
+
+                <h4 class="product-name">Áo thun</h4>
+                <table>
+                    <tr>
+                        <td>
+                            <form>
+                                <select name="color-product" class="input-default" style="font-size: 14px; padding: 10px ; border: none; margin-right: 20px;">
+                                <option value="Xám">Xám</option>
+                                <option value="Trắng">Trắng</option>
+                                <option value="Đen">Đen</option>
+                                </select>
+                                </form>
+                        </td>
+                        <td>
+                            <form>
+                                <select name="size-product" class="input-default" style="font-size: 14px; padding: 10px ; border: none; margin-right: 20px;">
+                                
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                                </select>
+                                </form>
+                        </td>
+                    </tr>
+                </table> <br>
+
+                <div class="wrapper">
+
+                  <div class="product-qty">
+                    <button id="decrement">
+                      <ion-icon name="remove-outline"></ion-icon>
+                    </button>
+
+                    <span id="quantity">1</span>
+
+                    <button id="increment">
+                      <ion-icon name="add-outline"></ion-icon>
+                    </button>
+                  </div>
+
+                  <div class="price">
+                    <span id="price">159.000 đ</span>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <button class="product-close-btn">
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="wrapper">
+
+          <div class="discount-token">
+
+            <label for="discount-token" class="label-default">Mã giảm giá</label>
+
+            <div class="wrapper-flex">
+
+              <input type="text" name="discount-token" id="discount-token" class="input-default">
+
+              <button class="btn btn-outline"><b>Chọn</b> </button>
+
+            </div>
+
+          </div>
+
+          <div class="amount">
+
+            <div class="subtotal">
+              <span>Tạm tính</span> <span id="subtotal">248.000 đ</span>
+            </div>
+
+            <div class="tax">
+              <span>Giảm giá</span> <span id="discount">0 đ</span>
+            </div>
+
+            <div class="shipping">
+              <span>Phí giao hàng</span> <span id="shipping">30.000 đ</span>
+            </div>
+
+            <div class="total">
+              <span>Tạm tính</span> <span id="total">278.000 đ</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </div>
+
+  </main>
+  <script src="./script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
+
+</body>
+
+</html>

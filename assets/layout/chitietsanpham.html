@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../css/header.css">
     <!-- file css chung để lấy size,font: main -->
     <link href="../css/main.css" rel="stylesheet" type="text/css">
+    <script src="../js/chitietsanpham.js"></script>
 
 </head>
 <body>
@@ -22,20 +23,20 @@
     <div id="header">
         <header class="row">
             <ul id="nav">
-                <li><a href="index.html"><img id="logo" src="../image/logo (7).png"></a></li>
+                <li><a href="/index.html"><img id="logo" src="../image/logo (7).png"></a></li>
                 <li id="none"></li>
                 <li>
-                    <a href=""> Danh sách 
+                    <a href="../layout/danhmucsp.html"> Danh sách 
                         <i class="ti-angle-down"></i>
                          </a>
                     <ul class="subnav">
-                        <li><a href="">Danh sách</a></li>
-                        <li><a href="">Áo sơ mi</a></li>
-                        <li><a href="">Áo ba lỗ</a></li>
+                        <li><a href="../layout/danhmucsp_quanshort.html">Quần short</a></li>
+                        <li><a href="../layout/danhmucsp_aosomi.html">Áo sơ mi</a></li>
+                        <li><a href="../layout/danhmucsp_aopolo.html">Áo polo</a></li>
                 </ul>
                 </li>
-                <li><a href="">About us</a></li>
-                <li><a href="">Khuyễn Mãi</a></li>
+                <li><a href="../layout/about.html">About us</a></li>
+                <li><a href="../layout/discount.html">Khuyễn Mãi</a></li>
                 <li id="none"></li>
                 <li>
                      <form action="" id="search-box">
@@ -45,11 +46,11 @@
                     </form>
                 </li>
                 
-                <li><a href=""><i class="shopping-cart-icon ti-shopping-cart"></i></a></li>
+                <li><a href="../layout/cart.html"><i class="shopping-cart-icon ti-shopping-cart"></i></a></li>
                 <li><a href=""><i class="user-icon ti-user"></i></a></li>
             </ul>
         </header>
-      </div>
+    </div>
     <!-- end header --> 
 
     <!-- content --> 
@@ -66,22 +67,117 @@
         <div id="chitiet">
             <div id="hinhanh">
                 <img id="img_main" src="../image/sanpham (18).jpg">
-                <img src="../image/sanpham (14).jpg" >
-                <img src="../image/sanpham (15).jpg" >
-                <img src="../image/sanpham (16).jpg" >
+                <img id="img_1" src="../image/sanpham (14).jpg" >
+                <img id="img_2" src="../image/sanpham (15).jpg" >
+                <img id="img_3" src="../image/sanpham (16).jpg" >
 
 
             </div>
             <div id="thongtin">
-                <h2 style="margin: 20px;">Áo polo nam cổ bẻ TSIMPLE</h2>
-                <h3 style="margin: 20px; color: #FC9D45; font-weight: bold;">200.000 VNĐ</h3>
-                <div> <h3>Chọn màu:</h3> </div>
-                <div> <h3>Chọn size:</h3> </div>
-                <div></div>
+                <h2 style="text-align: center; margin: 20px;">Áo polo nam cổ bẻ TSIMPLE</h2>
+                <h3 style=" color: #FC9D45; font-weight: bold;">200.000 VNĐ</h3>
+                <div> <h3>Chọn màu: <select onchange="chonmau()" id="chonmau">
+                    <option value="red">Đỏ</option>
+                    <option value="blue">Xanh dương</option>
+                    <option value="green">Xanh lục</option>
+                    <option value="lightblue">Xanh nhạt</option>
+                </select></h3>  </div>
+                <div> <h3>Chọn size:
+                    <select id="chonsize">
+                        <option value="M">M</option>
+                        <option value="Xl">XL</option>
+                        <option value="XXL">XXL</option>
+                        <option value="XXXl">XXXL</option>
+                    </select>
+                </h3> </div>
+                <div>
+                    <button class="btn_sub" name="button" value="OK" type="button" onclick="addtocart()"    ><i class="ti-plus"></i> Thêm vào giỏ hàng  </button>  
+<script>  
+  function addtocart(){  
+    alert("Thêm vào giỏ hàng thành công");  
+  }  
+</script>  
+
+                   <button onclick="gotocart()" class="btn_sub">  <a href="../layout/cart.html"><i class="ti-shopping-cart"></i> </a> Mua ngay </button>  
+                   <img onclick="changeImage()" id="addtof" src="../image/unadd.png" alt=""> 
+                 
+                  
+                </div>
+                <div id="mota">
+                    <i class="ti-star"></i> <p > Sản phẩm làm từ chất vải tốt nhất, nhập trên con đường tơ lụa. Vải Denim được dệt toàn bộ tại nhà máy Nhơn Trạch, Đồng Nai của Saitex
+                        Chất liệu: 99% Regenerative Cotton (Cotton Tái sinh) + 1% Elastane, tạo sự co giãn đem đến sự thoải mái khi vận động
+                         Định lượng vải nhẹ chỉ với 13.7 Oz
+                         Kéo sợi và dệt nhuộm theo quy trình sạch và bền vững tại Việt Nam </p>
+
+                        <i class="ti-heart"></i>
+                        <p > Sản phẩm làm từ chất vải tốt nhất, nhập trên con đường tơ lụa. Vải Denim được dệt toàn bộ tại nhà máy Nhơn Trạch, Đồng Nai của Saitex
+                            Chất liệu: 99% Regenerative Cotton (Cotton Tái sinh) + 1% Elastane, tạo sự co giãn đem đến sự thoải mái khi vận động
+                             Định lượng vải nhẹ chỉ với 13.7 Oz
+                             Kéo sợi và dệt nhuộm theo quy trình sạch và bền vững tại Việt Nam </p>
+                </div>
                
               
             </div>
-            <div id="thongtinbosung"></div>
+            <div id="thongtinbosung">
+                <div>
+                    <h2 class="h2center">Có thể bạn cũng thích</h2>
+                   
+                    <div id="noibat">
+                        <div class="sanpham" >
+                            <div   style="background-color: lightgray;padding:10px" >
+                                <a href="../layout/danhmucsp.html">
+                                    <img style="width:100%"
+                                     src="../image/sanpham (19).jpg">
+                                    <h3> Áo polo </h3>
+                                    <h3> 300.000 </h3>
+                                </a>
+                            </div>
+                          
+                        </div>
+                        <div class="sanpham" >
+                            <div   style="background-color: lightgray;padding:10px" >
+                                <a href="../layout/danhmucsp.html">
+                                    <img style="width:100%"
+                                     src="../image/sanpham (20).jpg">
+                                    <h3> Áo polo </h3>
+                                    <h3> 190.000 </h3>
+                                </a>
+                            </div>
+                          
+                        </div>
+                        <div class="sanpham" >
+                            <div   style="background-color: lightgray;padding:10px" >
+                                <a href="../layout/danhmucsp.html">
+                                    <img style="width:100%"
+                                     src="../image/sanpham (21).jpg">
+                                    <h3> Áo polo </h3>
+                                    <h3> 210.000 </h3>
+                                    
+                                </a>
+                            </div>
+                          
+                        </div>
+                        <div class="sanpham" >
+                            <div   style="background-color: lightgray;padding:10px" >
+                                <a href="../layout/danhmucsp.html">
+                                    <img style="width:100%"
+                                     src="../image/sanpham (17).jpg">
+                                    <h3> Áo polo </h3>
+                                    <h3> 230.000 </h3>
+                                </a>
+                            </div>
+                          
+                        </div>
+                      
+                        
+                    </div>
+        
+                   
+                   
+            </div>
+                            
+           
+            </div>
 
         </div>
 

@@ -33,6 +33,15 @@ hover{
     color: #000;
     
   }
+
+  button{
+    background-color: #FFDE59;
+   height: 60px;
+
+   color: #601E00;
+    border-radius: 15px;
+}
+
   
 
   

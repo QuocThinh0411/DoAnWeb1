@@ -11,26 +11,34 @@
     <link href="./assets/font_icon/themify-icons/themify-icons.css" rel="stylesheet">
     <!-- file css header -->
     <link rel="stylesheet" href="./assets/css/header.css">
+<!-- file css footer -->
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" type="text/css" href="../font_icon/fontawesome-free-6.2.1-web/css/all.min.css">
+
+    <link href="../css/main.css" rel="stylesheet" type="text/css">
+    <script src="assets/js/index.js"></script>
+
 </head>
-<body>
+<body style="background-image: url(./assets/image/background.png );">
     
+    <div id="header">
         <header class="row">
             <ul id="nav">
                 <li><a href="index.html"><img id="logo" src="./assets/image/logo (7).png"></a></li>
-                
-                <li>
-                    <a href=""> Danh sách 
+                <li id="none"></li>
+                <li> 
+                    <a href="./assets/layout/danhmucsp.html"> Danh sách
                         <i class="ti-angle-down"></i>
                          </a>
                     <ul class="subnav">
-                        <li><a href="">Danh sách</a></li>
-                        <li><a href="">Áo sơ mi</a></li>
-                        <li><a href="">Áo ba lỗ</a></li>
+                        <li><a href="./assets/layout/danhmucsp_quanshort.html">Quần short</a></li>
+                        <li><a href="./assets/layout/danhmucsp_aosomi.html">Áo sơ mi</a></li>
+                        <li><a href="./assets/layout/danhmucsp_aopolo.html">Áo polo</a></li>
                 </ul>
                 </li>
-                <li><a href="">About us</a></li>
-                <li><a href="">Khuyễn Mãi</a></li>
-                
+                <li><a href="./assets/layout/about.html">About us</a></li>
+                <li><a href="./assets/layout/discount.html">Khuyễn Mãi</a></li>
+                <li id="none"></li>
                 <li>
                      <form action="" id="search-box">
                         
@@ -39,31 +47,52 @@
                     </form>
                 </li>
                 
-                <li><a href=""><i class="shopping-cart-icon ti-shopping-cart"></i></a></li>
+                <li><a href="./assets/layout/cart.html"><i class="shopping-cart-icon ti-shopping-cart"></i></a></li>
                 <li><a href=""><i class="user-icon ti-user"></i></a></li>
             </ul>
         </header>
-        <br><br><br><br>
-
-            <div class="row">
-                <div id="info" >
-                    <h2 class="h2center">Chào mừng bạn đến với SunHappy</h2>
-                    <p>Chúng tôi luôn trân trọng và
-                         mong đợi nhận được mọi ý kiến
-                          đóng góp từ khách hàng để có thể 
-                          nâng cấp trải nghiệm dịch vụ và sản phẩm tốt hơn nữa.</p>
-                  
-                </div>
-                <div id="buy"> 
-                    <h3 id="left">BLA BLA BLA BLA BLA BLA</h3>
-                    <h3 id="right">BLA BLA BLA BLA BLA BLA</h3>
-                    <button id="btn" > <a href="./assets/layout/danhmucsp.html">Mua ngay</a></button>
-                </div>
-            </div>
+    </div>
+    
+     <div class="row">
+                        <div id="info" >
+                            <div id="infotext">
+                                <h2 class="h2center">Chào mừng bạn đến với SunHappy</h2>
+                                <p>Chúng tôi luôn trân trọng và
+                                     mong đợi nhận được mọi ý kiến
+                                      đóng góp từ khách hàng để có thể 
+                                      nâng cấp trải nghiệm dịch vụ và sản phẩm tốt hơn nữa.</p>
+                                      <h2 class="h2center"><a id="aClick" href="./assets/layout/about.html"> Tìm hiểu ngay</a></h2>
+                              
+                            </div>  
+                            <img id="infoimg" src="./assets/image/sanpham (17).jpg" alt="">
+                        </div>
+    </div>
+                
+             
+     <div class="row"> 
+                    <div id="khuyenmai" >
+                        <div id="khuyenmaitext">
+                            <h2 class="h2center">Chương trình khuyến mãi cuối năm</h2>
+                            <p>Chúng tôi luôn trân trọng và
+                                 mong đợi nhận được mọi ý kiến
+                                  đóng góp từ khách hàng để có thể 
+                                  nâng cấp trải nghiệm dịch vụ và sản phẩm tốt hơn nữa.</p>
+                                  <h2 class="h2center"><a id="aClick" href="./assets/layout/discount.html"> Mua hàng ngay</a></h2>
+                          
+                        </div>  
+                        <img id="khuyenmaiimg" src="./assets/image/sanpham (17).jpg" alt="">
+                    </div>
+     </div>
+                
+               
+               
+   
+  
           
-<div>
+    <div>
     <h2 class="h2center">Sản phẩm nổi bật</h2>
-    <hr>
+    
+
     <div id="noibat">
         <div class="sanpham" >
             <div   style="background-color: lightgray;padding:10px" >
@@ -108,12 +137,12 @@
       
         
     </div>
-</div>
+    </div>
 
-                
+
     <div>
             <h2 class="h2center">Sản phẩm khuyến mãi</h2>
-            <hr>
+           
             <div id="noibat">
                 <div class="sanpham" >
                     <div   style="background-color: lightgray;padding:10px" >
@@ -160,16 +189,15 @@
             </div>
 
            
+           
     </div>
-            
-                
-
-            
-      
+                    
+   
+  
+  
      
-        
+  
 
-        <footer class="row">     </footer>
        
        
 

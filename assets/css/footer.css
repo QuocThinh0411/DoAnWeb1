@@ -7,11 +7,11 @@ body{
 	padding:0;
 	box-sizing: border-box;
 }
-.container{
+.ftcontainer{
 	max-width: 1170px;
 	margin:auto;
 }
-.row{
+.ftrow{
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -60,7 +60,7 @@ ul{
 	color: #ffd24c;
 	padding-left: 8px;
 }
-.footer-col .social-links a{
+.footer-col .ftsocial-links a{
 	display: inline-block;
 	height: 40px;
 	width: 40px;
@@ -72,7 +72,7 @@ ul{
 	color: #ffffff;
 	transition: all 0.5s ease;
 }
-.footer-col .social-links a:hover{
+.footer-col .ftsocial-links a:hover{
 	color: #24262b;
 	background-color: #ffd24c;
 }

@@ -1,16 +1,63 @@
 .row{
-    float: left;
-    width: 100%;
+width: 100%;
 }
 
 #info{
-    float: left;
-    width: 40%;
+  
+    width: 90%;
     background-color: rgb(230, 227, 109);
-    min-height: 250px;
-    margin: 5% 5% 5% 5%;
+    height: 500px;
+
+    margin: 10% 5% 5% 5%;
     border: 15px ridge rgb(241, 239, 69);
     border-radius: 15px;
+
+}
+#aClick{
+    color: red;
+font-size: 50px;
+      
+  }
+#aClick:hover{
+  color: aqua;
+    
+}
+#info #infotext{
+    float: left;
+    width: 40%;
+    margin: 2.5%;
+    
+}
+#info #infoimg{
+    width: 40%;
+    height: 90%;
+    float: right;
+    margin: 2.5%
+
+}
+
+#khuyenmai{
+
+
+    margin: 5% 5% 5% 5%;
+    width: 90%;
+    background-color: rgb(209, 135, 228);
+    height: 500px;
+    border: 15px ridge rgb(139, 70, 248);
+    border-radius: 15px;
+
+}
+#khuyenmai #khuyenmaitext{
+    float: right;
+    width: 40%;
+    margin: 2.5%;
+    
+}
+#khuyenmai #khuyenmaiimg{
+    width: 40%;
+    height: 90%;
+    float: left;
+    margin: 2.5%
 
 }
 
@@ -26,10 +73,15 @@
     padding: 15px;
     font-size: 20px;
 }
-#buy{
+#khuyenmai p{
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+}
+/* #buy{
     float: left;
-    width: 30%;
-    background-color: blue;
+    width: 90%;
+    background-color: rgb(155, 240, 240);
     min-height: 250px;
     margin: 5% 5% 5% 5%;
     padding: 15px;
@@ -42,7 +94,7 @@
 }
 #buy #right{
     text-align: end;
-}
+} */
 #buy #btn{
 min-height: 100px;
 min-width: 100px;
@@ -61,26 +113,21 @@ margin: 20px 40%;
     margin: 15px 0px;
     padding: 20px;
 }
-#khuyenmai{
-    text-align: center;
-    margin: 15px 0px;
 
+.hr{
+    width: 100%;
+    text-align: center;
 }
-hr{
-    width: 5%;
-    size: 5px;
-    color: aliceblue;
-}
+
+
 .sanpham{
-    
     text-align: center;
     width: 25%;
     padding: 10px;
      float: left;
     box-sizing: border-box;
     border-radius: 15px;
-    
-    
+
 }
 .sanpham img{
     height: 280px;

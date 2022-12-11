@@ -1,27 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap');
-body{
+.ft-body{
 	font-family: 'Montserrat', sans-serif;
+	
 }
 *{
 	margin:0;
 	padding:0;
 	box-sizing: border-box;
+	
 }
-.ftcontainer{
+.ft-container{
 	max-width: 1170px;
 	margin:auto;
 }
-.ftrow{
+.ft-row{
 	display: flex;
 	flex-wrap: wrap;
 }
-ul{
+.ft-ul{
 	list-style: none;
 }
 .footer{
 	background-color: #3f4044;
     padding: 70px 0;
 	height: auto;
+	
 }
 .footer-col{
    width: 25%;
@@ -60,7 +63,7 @@ ul{
 	color: #ffd24c;
 	padding-left: 8px;
 }
-.footer-col .ftsocial-links a{
+.footer-col .social-links a{
 	display: inline-block;
 	height: 40px;
 	width: 40px;
@@ -72,7 +75,7 @@ ul{
 	color: #ffffff;
 	transition: all 0.5s ease;
 }
-.footer-col .ftsocial-links a:hover{
+.footer-col .social-links a:hover{
 	color: #24262b;
 	background-color: #ffd24c;
 }
@@ -92,7 +95,3 @@ ul{
     width: 100%;
 }
 }
-
-
-
-

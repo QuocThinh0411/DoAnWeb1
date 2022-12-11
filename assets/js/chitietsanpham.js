@@ -25,6 +25,8 @@ function chonmau(){
     var image2 = document.getElementById("img_2");
     var image3 = document.getElementById("img_3");
 
+
+
     if (value.value == 'red'){
         image.src = "../image/sanpham (18).jpg";
      image1.src ="../image/sanpham (14).jpg"

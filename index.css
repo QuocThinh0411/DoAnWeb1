@@ -1,7 +1,18 @@
 .row{
 width: 100%;
 }
+/* body{
+    width: 100%;
+    height: 85%;
+    display: block;
 
+} */
+/* #ft{
+position: relative;
+    bottom: 0;
+    width: 100%;
+
+} */
 #info{
   
     width: 90%;
@@ -108,7 +119,9 @@ margin: 20px 40%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     
 }
-#noibat{
+.noibat{
+   
+    height: 400px;
     text-align: center;
     margin: 15px 0px;
     padding: 20px;
@@ -121,19 +134,38 @@ margin: 20px 40%;
 
 
 .sanpham{
+    
     text-align: center;
     width: 25%;
+    height: 100%;
     padding: 10px;
      float: left;
     box-sizing: border-box;
     border-radius: 15px;
 
 }
-.sanpham img{
-    height: 280px;
+.sanpham > div{
+    height: 100%;
     border-radius: 15px;
 
 }
+.sanpham > div > a{
+    height: 100%;
+    
+
+}
+.sanpham > div >a> .asp{
+
+   height: 90%;
+    border-radius: 15px;
+
+}
+.sanpham > div >a> h3{
+
+    max-height: 10%;
+   
+ 
+ }
 .sanpham:hover{
     opacity: 70%;
 }

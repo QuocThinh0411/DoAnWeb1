@@ -8,15 +8,16 @@
      <!-- file css riêng của mỗi layout -->
      <link rel="stylesheet"  href="../bootstrap/css/bootstrap.css" type="text/css">
      <link rel="stylesheet" href="../css/substyle.css" type="text/css">
-     <!-- file css chung để lấy size,font: main -->
-     <link href="/main.css" rel="stylesheet" type="text/css">
     <!-- file css để lấy thư viện icon -->
     <link rel="stylesheet" href="../font_icon/themify-icons/themify-icons.css" type="text/css">
     <!-- file css header -->
     <link rel="stylesheet" href="../css/header.css">
+    <!-- file css chung để lấy size,font: main -->
+    <link href="/main.css" rel="stylesheet" type="text/css">
+
 </head>
 <body>
-    <!-- header-->
+    <!-- header -->
     <div id="header">
         <header class="row">
             <ul id="nav">
@@ -48,18 +49,18 @@
             </ul>
         </header>
       </div>
-    <!-- end header-->
+    <!-- end header --> 
 
     <!-- content --> 
     <div id="body" style="margin-top: 70px;">
         <div style="background-color: #F9d342;padding-left: 50px; height: 35px;">
-            <p>Trang chủ <span class="ti-angle-right "></span><a href="../layout/danhmucsp.html">
+            <p>Trang chủ <span class="ti-angle-right " " ></span><a href="../layout/danhmucsp.html">
                 Danh mục sản phẩm
-            </a><span class="ti-angle-right "></span>Size XXL</p>  
+            </a></p>  
         </div>
-        <div class="prd1-cont container-fluid">
-            <div class="row">  
 
+        <div class="prd1-cont container-fluid">
+            <div class="row">    
                 <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 prd1-left hidden-xs hidden-sm">
                     <div class="row left-tree" >
                         <ul class="nav" >
@@ -70,19 +71,20 @@
                                 padding-left: 0;">
                                     <li>
                                         <label >
-                                            <input name="cbStatus" style="font-weight: bolder;" class="cb-item"  type="checkbox" value="aosomi" hidden>
+                                            <input name="cbStatus" class="cb-item"  type="checkbox" value="aosomi" hidden >
                                             <a href="../layout/danhmucsp_aosomi.html">
                                                 Áo sơ mi
-                                            </a>                                            <span class="glyphicon"></span>
+                                            </a>
+                                           
                                         </label>
                                     </li>
                                     <li>
-                                        <label >
+                                        <label>
                                             <input name="cbStatus" class="cb-item" type="checkbox" value="aopolo" hidden>
                                             <a href="../layout/danhmucsp_aopolo.html">
                                                 Áo Polo
                                             </a>
-                                            <span class="glyphicon"></span>
+                                           
                                         </label>
                                     </li>
                                     <li>
@@ -90,15 +92,16 @@
                                             <input name="cbStatus" class="cb-item" type="checkbox" value="quanshort" hidden>
                                             <a href="../layout/danhmucsp_quanshort.html">
                                                 Quần short
-                                            </a>   
-                                            <span class="glyphicon"></span>
+                                            </a>                                            
                                         </label>
                                     </li>
                                 
                                 </ul>
                             </li>
-                            
                             <div class="row left-divider"></div>
+                            <li>
+                                <hr color="blue">
+                            </li>
                             <li class="first-lvl">
                                 <label label-default class="tree-toggle nav-header orange"><span class="ti-layout-accordion-separated"></span> <Label> LỌC SẢN PHẨM   </Label> </span> 
                                 </label>
@@ -118,8 +121,7 @@
                                             <input name="cbStatus" class="cb-item" type="checkbox" value="aopolo" hidden>
                                             <a href="../layout/danhmucsp_size_M.html">
                                                 Size M
-                                            </a>
-                                            <span class="glyphicon"></span>
+                                            </a>                                            <span class="glyphicon"></span>
                                         </label>
                                     </li>
                                     <li>
@@ -127,14 +129,15 @@
                                             <input name="cbStatus" class="cb-item" type="checkbox" value="quanshort" hidden>
                                             <a href="../layout/danhmucsp_size_L.html">
                                                 Size L
-                                            </a>   
-                                            <span class="glyphicon"></span>
+                                            </a>                                             <span class="glyphicon"></span>
                                         </label>
                                     </li>
                                     <li>
-                                        <label style="font-weight:bolder ;">
+                                        <label>
                                             <input name="cbStatus" class="cb-item" type="checkbox" value="quanshort" hidden>
-                                            Size XXL    
+                                            <a href="../layout/danhmucsp_size_XXL.html">
+                                                Size XXL
+                                            </a>       
                                             <span class="glyphicon"></span>
                                         </label>
                                     </li>
@@ -151,8 +154,8 @@
                                         <label>
                                             <input name="cbStatus" class="cb-item"  type="checkbox" value="aosomi" hidden>
                                             <a href="../layout/danhmucsp_thaptoicao.html">
-                                                Giá thấp tới cao
-                                            </a>                                          <span class="glyphicon"></span>
+                                                Thấp tới cao
+                                            </a>                                              <span class="glyphicon"></span>
                                         </label>
                                     </li>
                                     <li>
@@ -160,7 +163,7 @@
                                             <input name="cbStatus" class="cb-item" type="checkbox" value="aopolo" hidden>
                                             <a href="../layout/danhmucsp_nhohon200k.html">
                                                 Nhỏ hơn 200k
-                                            </a>                                                 <span class="glyphicon"></span>
+                                            </a>                                            <span class="glyphicon"></span>
                                         </label>
                                     </li>
                                     <li>
@@ -168,7 +171,7 @@
                                             <input name="cbStatus" class="cb-item" type="checkbox" value="quanshort" hidden>
                                             <a href="../layout/danhmucsp_lonhon200k.html">
                                                 Lớn hơn 200k
-                                            </a>                                            <span class="glyphicon"></span>
+                                            </a>                                                 <span class="glyphicon"></span>
                                         </label>
                                     </li>
                                 
@@ -177,7 +180,6 @@
                         </ul>
                     </div>
                 </div>
-
                 <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 prd1-right">
                     <div class="row prd1-right-items">
                     
@@ -185,7 +187,7 @@
                             <div class="thumbnail">
                                 <div class="cont-item">
                                     <a href="">
-                                        <img class="inormal" src="../image/sanpham (6).jpg">
+                                        <img class="inormal" src="../image/sanpham (26).jpg">
                                     </a>
                                 </div>
                                 <div class="button"></div>
@@ -205,7 +207,7 @@
                             <div class="thumbnail">
                                 <div class="cont-item">
                                     <a href="">
-                                        <img class="inormal" src="../image/sanpham (17).jpg">
+                                        <img class="inormal" src="../image/sanpham (25).jpg">
                                     </a>
                                 </div>
                                 <div class="button"></div>
@@ -225,7 +227,7 @@
                             <div class="thumbnail">
                                 <div class="cont-item">
                                     <a href="">
-                                        <img class="inormal" src="../image/sanpham (8).jpg">
+                                        <img class="inormal" src="../image/sanpham (24).jpg">
                                     </a>
                                 </div>
                                 <div class="button"></div>
@@ -246,7 +248,7 @@
                             <div class="thumbnail">
                                 <div class="cont-item">
                                     <a href="">
-                                        <img class="inormal" src="../image/sanpham (9).jpg">
+                                        <img class="inormal" src="../image/sanpham (23).jpg">
                                     </a>
                                 </div>
                                 <div class="button"></div>
@@ -266,7 +268,7 @@
                             <div class="thumbnail">
                                 <div class="cont-item">
                                     <a href="">
-                                        <img class="inormal" src="../image/sanpham (10).jpg">
+                                        <img class="inormal" src="../image/sanpham (22).jpg">
                                     </a>
                                 </div>
                                 <div class="button"></div>
@@ -286,7 +288,7 @@
                             <div class="thumbnail">
                                 <div class="cont-item">
                                     <a href="">
-                                        <img class="inormal" src="../image/sanpham (16).jpg">
+                                        <img class="inormal" src="../image/sanpham (21).jpg">
                                     </a>
                                 </div>
                                 <div class="button"></div>
@@ -307,7 +309,7 @@
                             <div class="thumbnail">
                                 <div class="cont-item">
                                     <a href="">
-                                        <img class="inormal" src="../image/sanpham (12).jpg">
+                                        <img class="inormal" src="../image/sanpham (20).jpg">
                                     </a>
                                 </div>
                                 <div class="button"></div>
@@ -327,7 +329,7 @@
                             <div class="thumbnail">
                                 <div class="cont-item">
                                     <a href="">
-                                        <img class="inormal" src="../image/sanpham (14).jpg">
+                                        <img class="inormal" src="../image/sanpham (19).jpg">
                                     </a>
                                 </div>
                                 <div class="button"></div>
@@ -347,7 +349,7 @@
                             <div class="thumbnail">
                                 <div class="cont-item">
                                     <a href="">
-                                        <img class="inormal" src="../image/sanpham (15).jpg">
+                                        <img class="inormal" src="../image/sanpham (18).jpg">
                                     </a>
                                 </div>
                                 <div class="button"></div>
@@ -373,10 +375,10 @@
                         <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 item">
                             <table style="width: 100px; height:fit-content; --bs-link-hover-color: #F9d342;" align="center">
                                 <tr style="--bs-link-hover-color: #F9d342;">
-                                    <th style="--bs-link-hover-color: #F9d342;"><a href="./danhmucsp_size_XXL.html" style="color: #F9d342;">1</a></th>
-                                    <th style="--bs-link-hover-color: #F9d342;"><a href="./danhmucsp_size_XXL.html">2</a></th>
-                                    <th style="--bs-link-hover-color: #F9d342;"><a href="./danhmucsp_size_XXL.html">3</a></th>
-                                    <th style="--bs-link-hover-color: #F9d342;"><a href="./danhmucsp_size_XXL.html">4</a></th>
+                                    <th style="--bs-link-hover-color: #F9d342;"><a href="./danhmucsp.html">1</a></th>
+                                    <th style="--bs-link-hover-color: #F9d342;"><a href="./danhmucsp2.html">2</a></th>
+                                    <th style="--bs-link-hover-color: #F9d342;"><a href="./danhmucsp3.html" style="color: #F9d342;">3</a></th>
+                                    <th style="--bs-link-hover-color: #F9d342;"><a href="./danhmucsp4.html">4</a></th>
                                     <th style="--bs-link-hover-color: #F9d342;">5</th>
                                     <th style="--bs-link-hover-color: #F9d342;">...</th>
                                 </tr>
@@ -386,15 +388,110 @@
                     
                 </div>
             </div>
-                </div>
-            </div>
+        </div>
+        <p style=" text-align: center; font-size: 20px;  margin-top: 50px; justify-content: center; min-width: 500px;">Bạn cũng có thể thích</p>
+        
+        <div>
+            <table style="width:100%; margin-bottom: 100px;">
+                <tr>
+                    <th>
+                        <div>
+                            <div class="thumbnail2">
+                                <div class="cont-item">
+                                    <a href="">
+                                        <img class="inormal" src="../image/sanpham (3).jpg">
+                                    </a>
+                                </div>
+                                <div class="button"></div>
+                                <div class="caption">
+                                
+                                    <h3 class="divider"></h3>
+                                    <h3 class="name">
+                                        <a href="" style="--bs-link-hover-color: #F9d342;">Vintas Soda Pop - Low Top</a>
+                                    </h3>
+                                    <h3 class="price">
+                                        190.000 VND                                                                    
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </th>
+                    <th>
+                        <div>
+                            <div class="thumbnail2">
+                                <div class="cont-item">
+                                    <a href="">
+                                        <img class="inormal" src="../image/sanpham (4).jpg">
+                                    </a>
+                                </div>
+                                <div class="button"></div>
+                                <div class="caption">
+                                
+                                    <h3 class="divider"></h3>
+                                    <h3 class="name">
+                                        <a href="" style="--bs-link-hover-color: #F9d342;">Vintas Soda Pop - Low Top</a>
+                                    </h3>
+                                    <h3 class="price">
+                                        190.000 VND                                                                    
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </th>
+                    <th>
+                        <div>
+                            <div class="thumbnail2">
+                                <div class="cont-item">
+                                    <a href="">
+                                        <img class="inormal" src="../image/sanpham (7).jpg">
+                                    </a>
+                                </div>
+                                <div class="button"></div>
+                                <div class="caption">
+                                
+                                    <h3 class="divider"></h3>
+                                    <h3 class="name">
+                                        <a href=""style="--bs-link-hover-color: #F9d342;">Vintas Soda Pop - Low Top</a>
+                                    </h3>
+                                    <h3 class="price">
+                                        190.000 VND                                                                    
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </th>
+                    <th>
+                        <div>
+                            <div class="thumbnail2">
+                                <div class="cont-item">
+                                    <a href="" >
+                                        <img class="inormal" src="../image/sanpham (6).jpg">
+                                    </a>
+                                </div>
+                                <div class="button"></div>
+                                <div class="caption">
+                                
+                                    <h3 class="divider"></h3>
+                                    <h3 class="name">
+                                        <a href="" style="--bs-link-hover-color: #F9d342;">Vintas Soda Pop - Low Top</a>
+                                    </h3>
+                                    <h3 class="price">
+                                        190.000 VND                                                                    
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </th>
+                    
+                </tr>
+            </table>
         </div>
     </div>
-    <!-- end content -->  
+    <!-- end content --> 
+     
 
-    <!-- footer -->  
     <div id="footer" ></div>
-    <!-- end footer -->  
+    
 
 
 </body>

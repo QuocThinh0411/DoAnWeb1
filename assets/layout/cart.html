@@ -35,16 +35,16 @@
               <input type="number" name="card-number" id="card-number" class="input-default">
             </div>
             <div class="address">
-                <label for="address" class="label-default">Địa chỉ giao hàng</label>
-                <select name="calc_shipping_provinces" required="" class="input-default" >
-                    <option value="">Chọn Tỉnh/Thành phố</option>
-                </select>
-                <select name="calc_shipping_district" required="" class="input-default" >
-                    <option value="">Chọn Quận/Huyện</option>
-                </select>
-                <input class="billing_address_1" name="" type="hidden" value="">
-                <input class="billing_address_2" name="" type="hidden" value="">
-            </div> <br>
+              <label for="address" class="label-default">Địa chỉ giao hàng</label>
+              <select name="calc_shipping_provinces" required="" class="input-default" style="font-size: 14px; padding: 12px 15px ; border: none; margin-right: 20px;">
+                  <option value="">Chọn Tỉnh/Thành phố</option>
+              </select>
+              <select name="calc_shipping_district" required="" class="input-default" style="font-size: 14px; padding: 12px 15px ; border: none; margin-right: 20px;">
+                  <option value="">Chọn Quận/Huyện</option>
+              </select>
+              <input class="billing_address_1" name="" type="hidden" value="">
+              <input class="billing_address_2" name="" type="hidden" value="">
+          </div> <br>
             <div class="address-number">
                 <label for="address-number" class="label-default">Số nhà cụ thể</label>
                 <input type="address-number" name="address-number" id="address-number" class="input-default">
@@ -143,7 +143,7 @@
                   </div>
 
                   <div class="price">
-                    <span id="price">189000</span>
+                    <span id="priceProduct">189000</span>
                   </div>
 
                 </div>
@@ -209,7 +209,7 @@
                   </div>
 
                   <div class="price">
-                    <span id="price">159000</span>
+                    <span id="priceProduct">159000</span>
                   </div>
 
                 </div>
@@ -242,14 +242,14 @@
 
           </div>
 
-          <div class="amount">
+          <div class="amount" onclick="totalCalc()">
 
             <div class="subtotal">
-              <span>Tạm tính</span> <span id="subtotal">248000</span>
+              <span>Tạm tính</span> <span id="subtotal">348000</span>
             </div>
 
             <div class="tax">
-              <span>Giảm giá</span> <span id="discount">0</span>
+              <span>Giảm giá</span> <span id="discount">15000</span>
             </div>
 
             <div class="shipping">
@@ -257,7 +257,7 @@
             </div>
 
             <div class="total">
-              <span>Tạm tính</span> <span id="total">278000</span>
+              <span>Tạm tính</span> <span id="total">378000 VND</span>
             </div>
 
           </div>
@@ -270,9 +270,9 @@
 
   </main>
   <script src="../js/script.js"></script>
-  <script src="../js/address.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="../js/address.js"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'> </script>
   <script src='https://cdn.jsdelivr.net/gh/vietblogdao/js/districts.min.js'> </script>
   

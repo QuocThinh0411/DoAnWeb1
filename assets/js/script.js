@@ -2,12 +2,11 @@
 const decrementBtn = document.querySelectorAll('#decrement');
 const quantityProduct = document.querySelectorAll('#quantity');
 const incrementBtn = document.querySelectorAll('#increment');
-const priceProduct = document.querySelectorAll('#price');
+const priceProduct = document.querySelectorAll('#priceProduct');
 const subtotal = document.querySelector('#subtotal');
 const discount = document.querySelector('#discount');
 const total = document.querySelector('#total');
 const shipping = document.querySelector('#shipping');
-
 
 
 for (let i = 0; i < incrementBtn.length; i++) {
@@ -32,20 +31,25 @@ for (let i = 0; i < incrementBtn.length; i++) {
 }
 
 
-const totalCalc = function () {
+function totalCalc() {
 
-  let subtotal = 0;
-  let total = 0;
+  let subtotalValue = 0;
+  let totalValue = 0;
 
   for (let i = 0; i < quantityProduct.length; i++) {
 
-    subtotal += Number(quantityProduct[i].textContent) * Number(priceProduct[i].textContent);
-
+    subtotalValue += Number(quantityProduct[i].textContent) * Number(priceProduct[i].textContent);
   }
 
-  subtotal.textContent = subtotal.toFixed();
+  subtotal.textContent = subtotalValue;
 
-  total = subtotal + discount + shipping;
+  totalValue = subtotalValue - Number(discount.textContent) + Number(shipping.textContent);
 
-  total.textContent = total.toFixed();
+  total.textContent = totalValue.toFixed() + " VND";
 }
+
+// function totalCalc(){
+
+
+
+// }

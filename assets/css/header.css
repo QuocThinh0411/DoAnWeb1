@@ -36,7 +36,7 @@
   color: #000;
 }
 #nav .subnav a:hover{
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
     color: #295f2d; 
   }
 
@@ -64,7 +64,7 @@
     width: 100%;
     list-style-type: none;
     position: absolute;
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
 
 }

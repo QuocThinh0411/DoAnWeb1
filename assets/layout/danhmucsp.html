@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-     <!-- file css riêng của mỗi layout -->
-     <link rel="stylesheet"  href="../bootstrap/css/bootstrap.css" type="text/css">
-     <link rel="stylesheet" href="../css/substyle.css" type="text/css">
+    <!-- file css riêng của mỗi layout -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="../css/substyle.css" type="text/css">
     <!-- file css để lấy thư viện icon -->
     <link rel="stylesheet" href="../font_icon/themify-icons/themify-icons.css" type="text/css">
     <!-- file css header -->
     <link rel="stylesheet" href="../css/header.css">
     <!-- file css chung để lấy size,font: main -->
     <link href="/main.css" rel="stylesheet" type="text/css">
-
+    <!-- file css footer  -->
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" type="text/css" href="../font_icon/fontawesome-free-6.2.1-web/css/all.min.css">
+    <script src="events_on_dssp.js">
+    </script>
 </head>
-<body>
+
+<body onload="addevents()">
     <!-- header -->
     <div id="header">
         <header class="row">
@@ -24,78 +30,83 @@
                 <li><a href="../index.html"><img id="logo" src="../image/logo (7).png"></a></li>
                 <li id="none"></li>
                 <li>
-                    <a href=""> Danh sách 
+                    <a href="#"> Danh sách
                         <i class="ti-angle-down"></i>
-                         </a>
+                    </a>
                     <ul class="subnav">
-                        <li><a href="">Danh sách</a></li>
-                        <li><a href="">Áo sơ mi</a></li>
-                        <li><a href="">Áo ba lỗ</a></li>
-                </ul>
+                        <li><a href="#">Danh sách</a></li>
+                        <li><a href="#">Áo sơ mi</a></li>
+                        <li><a href="#">Áo ba lỗ</a></li>
+                    </ul>
                 </li>
-                <li><a href="">About us</a></li>
-                <li><a href="">Khuyễn Mãi</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Khuyễn Mãi</a></li>
                 <li id="none"></li>
                 <li>
-                     <form action="" id="search-box">
-                        
+                    <form action="" id="search-box">
+
                         <input placeholder="Điền tên sản phẩm" type="text" id="search-text">
                         <button id="search-btn"><i class="ti-search"></i></button>
                     </form>
                 </li>
-                
-                <li><a href=""><i class="shopping-cart-icon ti-shopping-cart"></i></a></li>
-                <li><a href=""><i class="user-icon ti-user"></i></a></li>
+
+                <li><a href="#"><i class="shopping-cart-icon ti-shopping-cart"></i></a></li>
+                <li><a href="#"><i class="user-icon ti-user"></i></a></li>
             </ul>
         </header>
-      </div>
-    <!-- end header --> 
+    </div>
+    <!-- end header -->
 
-    <!-- content --> 
+    <!-- content -->
     <div id="body" style="margin-top: 70px;">
-        <div style="background-color: #F9d342;padding-left: 50px; height: 35px;">
-            <p>Trang chủ <span class="ti-angle-right " " ></span><a href="../layout/danhmucsp.html">
-                Danh mục sản phẩm
-            </a></p>  
+        <div style="background-color: #F9d342;padding-left: 50px; height: 35px; margin-top: 80px;">
+            <p>Trang chủ <span class="ti-angle-right " " ></span><a href=" ../layout/danhmucsp.html">
+                    Danh mục sản phẩm
+                    </a></p>
         </div>
 
         <div class="prd1-cont container-fluid">
-            <div class="row">    
+            <div class="row">
+
                 <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 prd1-left hidden-xs hidden-sm">
-                    <div class="row left-tree" >
-                        <ul class="nav" >
+                    <div class="row left-tree">
+                        <ul class="nav">
                             <li class="first-lvl">
-                                <label label-default class="tree-toggle nav-header "><span class="ti-view-list-alt"></span> PHÂN LOẠI </span> 
+                                <label label-default class="tree-toggle nav-header "><span
+                                        class="ti-view-list-alt"></span> PHÂN LOẠI </span>
                                 </label>
                                 <ul class="tree" style="list-style: none;    margin-bottom: 0;
                                 padding-left: 0;">
                                     <li>
-                                        <label >
-                                            <input name="cbStatus" class="cb-item"  type="checkbox" value="aosomi" hidden >
+                                        <label>
+                                            <input name="cbStatus" class="cb-item" type="checkbox" value="aosomi"
+                                                hidden>
                                             <a href="../layout/danhmucsp_aosomi.html">
                                                 Áo sơ mi
                                             </a>
-                                           
+
                                         </label>
                                     </li>
                                     <li>
                                         <label>
-                                            <input name="cbStatus" class="cb-item" type="checkbox" value="aopolo" hidden>
+                                            <input name="cbStatus" class="cb-item" type="checkbox" value="aopolo"
+                                                hidden>
                                             <a href="../layout/danhmucsp_aopolo.html">
                                                 Áo Polo
                                             </a>
-                                           
+
                                         </label>
                                     </li>
                                     <li>
                                         <label>
-                                            <input name="cbStatus" class="cb-item" type="checkbox" value="quanshort" hidden>
+                                            <input name="cbStatus" class="cb-item" type="checkbox" value="quanshort"
+                                                hidden>
                                             <a href="../layout/danhmucsp_quanshort.html">
                                                 Quần short
-                                            </a>                                            
+                                            </a>
                                         </label>
                                     </li>
-                                
+
                                 </ul>
                             </li>
                             <div class="row left-divider"></div>
@@ -103,13 +114,16 @@
                                 <hr color="blue">
                             </li>
                             <li class="first-lvl">
-                                <label label-default class="tree-toggle nav-header orange"><span class="ti-layout-accordion-separated"></span> <Label> LỌC SẢN PHẨM   </Label> </span> 
+                                <label label-default class="tree-toggle nav-header orange"><span
+                                        class="ti-layout-accordion-separated"></span> <Label> LỌC SẢN PHẨM </Label>
+                                    </span>
                                 </label>
                                 <ul class="tree" style="list-style: none;    margin-bottom: 0;
                                 padding-left: 0;">
                                     <li>
                                         <label>
-                                            <input name="cbStatus" class="cb-item"  type="checkbox" value="aosomi" hidden>
+                                            <input name="cbStatus" class="cb-item" type="checkbox" value="aosomi"
+                                                hidden>
                                             <a href="../layout/danhmucsp_size_S.html">
                                                 Size S
                                             </a>
@@ -118,87 +132,95 @@
                                     </li>
                                     <li>
                                         <label>
-                                            <input name="cbStatus" class="cb-item" type="checkbox" value="aopolo" hidden>
+                                            <input name="cbStatus" class="cb-item" type="checkbox" value="aopolo"
+                                                hidden>
                                             <a href="../layout/danhmucsp_size_M.html">
                                                 Size M
-                                            </a>                                            <span class="glyphicon"></span>
+                                            </a> <span class="glyphicon"></span>
                                         </label>
                                     </li>
                                     <li>
                                         <label>
-                                            <input name="cbStatus" class="cb-item" type="checkbox" value="quanshort" hidden>
+                                            <input name="cbStatus" class="cb-item" type="checkbox" value="quanshort"
+                                                hidden>
                                             <a href="../layout/danhmucsp_size_L.html">
                                                 Size L
-                                            </a>                                             <span class="glyphicon"></span>
+                                            </a> <span class="glyphicon"></span>
                                         </label>
                                     </li>
                                     <li>
                                         <label>
-                                            <input name="cbStatus" class="cb-item" type="checkbox" value="quanshort" hidden>
+                                            <input name="cbStatus" class="cb-item" type="checkbox" value="quanshort"
+                                                hidden>
                                             <a href="../layout/danhmucsp_size_XXL.html">
                                                 Size XXL
-                                            </a>       
+                                            </a>
                                             <span class="glyphicon"></span>
                                         </label>
                                     </li>
-                                
+
                                 </ul>
                             </li>
                             <div class="row left-divider"></div>
                             <li class="first-lvl">
-                                <label label-default class="tree-toggle nav-header orange"><span class="ti-layout-grid3"></span> <Label> SẮP XẾP THEO   </Label> </span> 
+                                <label label-default class="tree-toggle nav-header orange"><span
+                                        class="ti-layout-grid3"></span> <Label> SẮP XẾP THEO </Label> </span>
                                 </label>
                                 <ul class="tree" style="list-style: none;    margin-bottom: 0;
                                 padding-left: 0;">
                                     <li>
                                         <label>
-                                            <input name="cbStatus" class="cb-item"  type="checkbox" value="aosomi" hidden>
+                                            <input name="cbStatus" class="cb-item" type="checkbox" value="aosomi"
+                                                hidden>
                                             <a href="../layout/danhmucsp_thaptoicao.html">
                                                 Thấp tới cao
-                                            </a>                                              <span class="glyphicon"></span>
+                                            </a> <span class="glyphicon"></span>
                                         </label>
                                     </li>
                                     <li>
                                         <label>
-                                            <input name="cbStatus" class="cb-item" type="checkbox" value="aopolo" hidden>
+                                            <input name="cbStatus" class="cb-item" type="checkbox" value="aopolo"
+                                                hidden>
                                             <a href="../layout/danhmucsp_nhohon200k.html">
                                                 Nhỏ hơn 200k
-                                            </a>                                            <span class="glyphicon"></span>
+                                            </a> <span class="glyphicon"></span>
                                         </label>
                                     </li>
                                     <li>
                                         <label>
-                                            <input name="cbStatus" class="cb-item" type="checkbox" value="quanshort" hidden>
+                                            <input name="cbStatus" class="cb-item" type="checkbox" value="quanshort"
+                                                hidden>
                                             <a href="../layout/danhmucsp_lonhon200k.html">
                                                 Lớn hơn 200k
-                                            </a>                                                 <span class="glyphicon"></span>
+                                            </a> <span class="glyphicon"></span>
                                         </label>
                                     </li>
-                                
+
                                 </ul>
                             </li>
                         </ul>
                     </div>
                 </div>
+
                 <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 prd1-right">
                     <div class="row prd1-right-items">
-                    
+
                         <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 item">
                             <div class="thumbnail">
                                 <div class="cont-item">
-                                    <a href="">
+                                    <a href="#">
                                         <img class="inormal" src="../image/sanpham (2).jpg">
                                     </a>
                                 </div>
-                                <div class="button"></div>
-                                <div class="caption">
                                 
+                                <div class="caption">
+
                                     <h3 class="divider"></h3>
                                     <h3 class="name">
-                                        <a href="" >Vintas Soda Pop - Low Top</a>
+                                        <a href="#">Vintas Soda Pop - Low Top</a>
                                     </h3>
                                     <h3 class="price">
-                                        190.000 VND                                                                    
+                                        190.000 VND
                                     </h3>
                                 </div>
                             </div>
@@ -206,19 +228,19 @@
                         <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 item">
                             <div class="thumbnail">
                                 <div class="cont-item">
-                                    <a href="">
+                                    <a href="#">
                                         <img class="inormal" src="../image/sanpham (15).jpg">
                                     </a>
                                 </div>
-                                <div class="button"></div>
-                                <div class="caption">
                                 
+                                <div class="caption">
+
                                     <h3 class="divider"></h3>
                                     <h3 class="name">
-                                        <a href="">Vintas Soda Pop - Low Top</a>
+                                        <a href="#">Vintas Soda Pop - Low Top</a>
                                     </h3>
                                     <h3 class="price">
-                                        190.000 VND                                                                    
+                                        190.000 VND
                                     </h3>
                                 </div>
                             </div>
@@ -226,40 +248,40 @@
                         <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 item">
                             <div class="thumbnail">
                                 <div class="cont-item">
-                                    <a href="">
+                                    <a href="#">
                                         <img class="inormal" src="../image/sanpham (4).jpg">
                                     </a>
                                 </div>
-                                <div class="button"></div>
-                                <div class="caption">
                                 
+                                <div class="caption">
+
                                     <h3 class="divider"></h3>
                                     <h3 class="name">
-                                        <a href="">Vintas Soda Pop - Low Top</a>
+                                        <a href="#">Vintas Soda Pop - Low Top</a>
                                     </h3>
                                     <h3 class="price">
-                                        190.000 VND                                                                    
+                                        190.000 VND
                                     </h3>
                                 </div>
                             </div>
-                        </div>    
-                        <div class="item-break" ></div>
+                        </div>
+                        <div class="item-break"></div>
                         <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 item">
                             <div class="thumbnail">
                                 <div class="cont-item">
-                                    <a href="">
+                                    <a href="#">
                                         <img class="inormal" src="../image/sanpham (13).jpg">
                                     </a>
                                 </div>
-                                <div class="button"></div>
-                                <div class="caption">
                                 
+                                <div class="caption">
+
                                     <h3 class="divider"></h3>
                                     <h3 class="name">
-                                        <a href="">Vintas Soda Pop - Low Top</a>
+                                        <a href="#">Vintas Soda Pop - Low Top</a>
                                     </h3>
                                     <h3 class="price">
-                                        190.000 VND                                                                    
+                                        190.000 VND
                                     </h3>
                                 </div>
                             </div>
@@ -267,19 +289,19 @@
                         <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 item">
                             <div class="thumbnail">
                                 <div class="cont-item">
-                                    <a href="">
+                                    <a href="#">
                                         <img class="inormal" src="../image/sanpham (6).jpg">
                                     </a>
                                 </div>
-                                <div class="button"></div>
-                                <div class="caption">
                                 
+                                <div class="caption">
+
                                     <h3 class="divider"></h3>
                                     <h3 class="name">
-                                        <a href="">Vintas Soda Pop - Low Top</a>
+                                        <a href="#">Vintas Soda Pop - Low Top</a>
                                     </h3>
                                     <h3 class="price">
-                                        190.000 VND                                                                    
+                                        190.000 VND
                                     </h3>
                                 </div>
                             </div>
@@ -287,40 +309,40 @@
                         <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 item">
                             <div class="thumbnail">
                                 <div class="cont-item">
-                                    <a href="">
+                                    <a href="#">
                                         <img class="inormal" src="../image/sanpham (7).jpg">
                                     </a>
                                 </div>
-                                <div class="button"></div>
-                                <div class="caption">
                                 
+                                <div class="caption">
+
                                     <h3 class="divider"></h3>
                                     <h3 class="name">
-                                        <a href="">Vintas Soda Pop - Low Top</a>
+                                        <a href="#">Vintas Soda Pop - Low Top</a>
                                     </h3>
                                     <h3 class="price">
-                                        190.000 VND                                                                    
+                                        190.000 VND
                                     </h3>
                                 </div>
                             </div>
-                        </div>    
-                        <div class="item-break" ></div>
+                        </div>
+                        <div class="item-break"></div>
                         <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 item">
                             <div class="thumbnail">
                                 <div class="cont-item">
-                                    <a href="">
+                                    <a href="#">
                                         <img class="inormal" src="../image/sanpham (8).jpg">
                                     </a>
                                 </div>
-                                <div class="button"></div>
-                                <div class="caption">
                                 
+                                <div class="caption">
+
                                     <h3 class="divider"></h3>
                                     <h3 class="name">
-                                        <a href="">Vintas Soda Pop - Low Top</a>
+                                        <a href="#">Vintas Soda Pop - Low Top</a>
                                     </h3>
                                     <h3 class="price">
-                                        190.000 VND                                                                    
+                                        190.000 VND
                                     </h3>
                                 </div>
                             </div>
@@ -328,19 +350,19 @@
                         <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 item">
                             <div class="thumbnail">
                                 <div class="cont-item">
-                                    <a href="">
+                                    <a href="#">
                                         <img class="inormal" src="../image/sanpham (9).jpg">
                                     </a>
                                 </div>
-                                <div class="button"></div>
-                                <div class="caption">
                                 
+                                <div class="caption">
+
                                     <h3 class="divider"></h3>
                                     <h3 class="name">
-                                        <a href="">Vintas Soda Pop - Low Top</a>
+                                        <a href="#">Vintas Soda Pop - Low Top</a>
                                     </h3>
                                     <h3 class="price">
-                                        190.000 VND                                                                    
+                                        190.000 VND
                                     </h3>
                                 </div>
                             </div>
@@ -348,34 +370,41 @@
                         <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 item">
                             <div class="thumbnail">
                                 <div class="cont-item">
-                                    <a href="">
+                                    <a href="#">
                                         <img class="inormal" src="../image/sanpham (10).jpg">
                                     </a>
                                 </div>
-                                <div class="button"></div>
-                                <div class="caption">
                                 
+                                <div class="caption">
+
                                     <h3 class="divider"></h3>
                                     <h3 class="name">
-                                        <a href="">Vintas Soda Pop - Low Top</a>
+                                        <a href="#">Vintas Soda Pop - Low Top</a>
                                     </h3>
                                     <h3 class="price">
-                                        190.000 VND                                                                    
+                                        190.000 VND
                                     </h3>
                                 </div>
                             </div>
-                        </div>    
-                        <div class="item-break" ></div>
+                        </div>
+                        <div class="item-break"></div>
                     </div>
+
                 </div>
+
                 <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 prd1-right">
                     <div class="row prd1-right-items">
+
                         <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 item"></div>
                         <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 item"></div>
+
                         <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 item">
-                            <table style="width: 100px; height:fit-content; --bs-link-hover-color: #F9d342;" align="center">
+
+                            <table
+                                style="width: 100px; height:fit-content; --bs-link-hover-color: #F9d342; margin-left: 90px;">
                                 <tr style="--bs-link-hover-color: #F9d342;">
-                                    <th style="--bs-link-hover-color: #F9d342;"><a href="./danhmucsp.html" style="color: #F9d342;">1</a></th>
+                                    <th style="--bs-link-hover-color: #F9d342;"><a href="./danhmucsp.html"
+                                            style="color: #F9d342;">1</a></th>
                                     <th style="--bs-link-hover-color: #F9d342;"><a href="./danhmucsp2.html">2</a></th>
                                     <th style="--bs-link-hover-color: #F9d342;"><a href="./danhmucsp3.html">3</a></th>
                                     <th style="--bs-link-hover-color: #F9d342;"><a href="./danhmucsp4.html">4</a></th>
@@ -383,14 +412,19 @@
                                     <th style="--bs-link-hover-color: #F9d342;">...</th>
                                 </tr>
                             </table>
+
                         </div>
+
                     </div>
-                    
                 </div>
+
             </div>
         </div>
-        <p style=" text-align: center; font-size: 20px;  margin-top: 50px; justify-content: center; min-width: 500px;">Bạn cũng có thể thích</p>
-        
+
+
+        <p style=" text-align: center; font-size: 20px;  margin-top: 50px; justify-content: center; min-width: 500px;">
+            Bạn cũng có thể thích</p>
+
         <div>
             <table style="width:100%; margin-bottom: 100px;">
                 <tr>
@@ -398,19 +432,19 @@
                         <div>
                             <div class="thumbnail2">
                                 <div class="cont-item">
-                                    <a href="">
+                                    <a href="#">
                                         <img class="inormal" src="../image/sanpham (3).jpg">
                                     </a>
                                 </div>
-                                <div class="button"></div>
-                                <div class="caption">
                                 
+                                <div class="caption">
+
                                     <h3 class="divider"></h3>
                                     <h3 class="name">
-                                        <a href="" style="--bs-link-hover-color: #F9d342;">Vintas Soda Pop - Low Top</a>
+                                        <a href="#" style="--bs-link-hover-color: #F9d342;">Vintas Soda Pop - Low Top</a>
                                     </h3>
                                     <h3 class="price">
-                                        190.000 VND                                                                    
+                                        190.000 VND
                                     </h3>
                                 </div>
                             </div>
@@ -420,19 +454,19 @@
                         <div>
                             <div class="thumbnail2">
                                 <div class="cont-item">
-                                    <a href="">
+                                    <a href="#">
                                         <img class="inormal" src="../image/sanpham (4).jpg">
                                     </a>
                                 </div>
-                                <div class="button"></div>
-                                <div class="caption">
                                 
+                                <div class="caption">
+
                                     <h3 class="divider"></h3>
                                     <h3 class="name">
-                                        <a href="" style="--bs-link-hover-color: #F9d342;">Vintas Soda Pop - Low Top</a>
+                                        <a href="#" style="--bs-link-hover-color: #F9d342;">Vintas Soda Pop - Low Top</a>
                                     </h3>
                                     <h3 class="price">
-                                        190.000 VND                                                                    
+                                        190.000 VND
                                     </h3>
                                 </div>
                             </div>
@@ -442,19 +476,19 @@
                         <div>
                             <div class="thumbnail2">
                                 <div class="cont-item">
-                                    <a href="">
+                                    <a href="#">
                                         <img class="inormal" src="../image/sanpham (7).jpg">
                                     </a>
                                 </div>
-                                <div class="button"></div>
-                                <div class="caption">
                                 
+                                <div class="caption">
+
                                     <h3 class="divider"></h3>
                                     <h3 class="name">
-                                        <a href=""style="--bs-link-hover-color: #F9d342;">Vintas Soda Pop - Low Top</a>
+                                        <a href="#" style="--bs-link-hover-color: #F9d342;">Vintas Soda Pop - Low Top</a>
                                     </h3>
                                     <h3 class="price">
-                                        190.000 VND                                                                    
+                                        190.000 VND
                                     </h3>
                                 </div>
                             </div>
@@ -464,35 +498,87 @@
                         <div>
                             <div class="thumbnail2">
                                 <div class="cont-item">
-                                    <a href="" >
+                                    <a href="#">
                                         <img class="inormal" src="../image/sanpham (6).jpg">
                                     </a>
                                 </div>
-                                <div class="button"></div>
-                                <div class="caption">
                                 
+                                <div class="caption">
+
                                     <h3 class="divider"></h3>
                                     <h3 class="name">
-                                        <a href="" style="--bs-link-hover-color: #F9d342;">Vintas Soda Pop - Low Top</a>
+                                        <a href="#" style="--bs-link-hover-color: #F9d342;">Vintas Soda Pop - Low Top</a>
                                     </h3>
                                     <h3 class="price">
-                                        190.000 VND                                                                    
+                                        190.000 VND
                                     </h3>
                                 </div>
                             </div>
                         </div>
                     </th>
-                    
                 </tr>
             </table>
         </div>
+
     </div>
-    <!-- end content --> 
-     
+    <!-- end content -->
 
-    <div id="footer" ></div>
-    
+    <!-- footer -->
+    <footer class="footer">
+        <div class="ft-container">
+            <div class="ft-row">
+                <div class="footer-col">
+                    <a href="#"><img width="160dp" height="60dp" src="../image/SunHappy.png"></a> <br> <br>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/sunhappy.vn"><i class="ti-facebook"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="ti-instagram"></i></a>
+                    </div>
 
+                    <div>
+                        <ul style="padding-left: 0rem;" class="ft-ul">
+                            <li><a href="#">0909.673.694</a></li>
+                            <li><a href="#">cskh.sunhappy@gmail.com</a> </li>
+                            <li><a href="#">211 Linh Đông, P.Linh Đông, Thủ Đức, TP.HCM</a></li>
+
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="footer-col">
+                    <h4>Về SunHappy </h4>
+                    <ul style="padding-left: 0rem;" class="ft-ul">
+                        <li><a href="#">Câu chuyện SunHappy</a></li>
+                        <li><a href="#">Nhà máy</a></li>
+                        <li><a href="#">Về sản phẩm</a></li>
+                        <li><a href="#">Tuyển dụng</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Sản phẩm</h4>
+                    <ul style="padding-left: 0rem;" class="ft-ul">
+                        <li><a href="#">Áo phông</a></li>
+                        <li><a href="#">Áo sơ mi</a></li>
+                        <li><a href="#">Áo polo</a></li>
+                        <li><a href="#">Quần đùi</a></li>
+                        <li><a href="#">Quần dài</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Hỗ trợ khách hàng</h4>
+                    <ul style="padding-left: 0rem;" class="ft-ul">
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                        <li><a href="#">Chính sách đổi trả</a></li>
+                        <li><a href="#">Chính sách giao hàng</a></li>
+                        <li><a href="#">Hướng dẫn mua hàng</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
 
 </body>
+
 </html>

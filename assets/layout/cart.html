@@ -14,10 +14,6 @@
 
   <main class="container">
 
-    <h1 class="heading">
-      <ion-icon name="cart-outline"></ion-icon> Giỏ hàng
-    </h1>
-
     <div class="item-flex">
       <section class="checkout">
 
@@ -38,40 +34,14 @@
             </div>
             <div class="address">
                 <label for="address" class="label-default">Địa chỉ giao hàng</label>
-                <table>
-                    <tr>
-                        <td>
-                            <form>
-                                <select name="Tinh" class="input-default" style="font-size: 14px; padding: 12px 15px ; border: none; margin-right: 20px;">
-                                <option value="">Chọn Tỉnh/Thành phố</option>
-                                <option value="Hồ Chí Minh">Hồ Chí Minh</option>
-                                <option value="Hà Nội">Hà Nội</option>
-                                <option value="Gia Lai">Gia Lai</option>
-                                </select>
-                                </form>
-                        </td>
-                        <td>
-                            <form >
-                                <select name="Quan-Huyen" class="input-default" style="font-size: 14px; padding: 12px 15px ; border: none; margin-right: 20px;">
-                                <option value="">Chọn Quận/Huyện</option>
-                                <option value="Quận 1">Quận 1</option>
-                                <option value="Quận 2">Quận 2</option>
-                                <option value="Quận 3">Quận 3</option>
-                                </select>
-                                </form>
-                        </td>
-                        <td>
-                            <form>
-                                <select name="Thixa" class="input-default" style="font-size: 14px; padding: 12px 15px ; border: none; margin-right: 20px;">
-                                <option value="">Chọn Phường/Xã</option>
-                                <option value="Phường Bến Nghé">Phường Bến Nghé</option>
-                                <option value="Phường Bến Nghé">Phường Bến Nghé</option>
-                                <option value="Phường Bến Nghé">Phường Bến Nghé</option>
-                                </select>
-                                </form>
-                        </td>
-                    </tr>
-                </table>
+                <select name="calc_shipping_provinces" required="" class="input-default" >
+                    <option value="">Chọn Tỉnh/Thành phố</option>
+                </select>
+                <select name="calc_shipping_district" required="" class="input-default" >
+                    <option value="">Chọn Quận/Huyện</option>
+                </select>
+                <input class="billing_address_1" name="" type="hidden" value="">
+                <input class="billing_address_2" name="" type="hidden" value="">
             </div> <br>
             <div class="address-number">
                 <label for="address-number" class="label-default">Số nhà cụ thể</label>
@@ -171,7 +141,7 @@
                   </div>
 
                   <div class="price">
-                    <span id="price">189.000 đ</span>
+                    <span id="price">189000</span>
                   </div>
 
                 </div>
@@ -237,7 +207,7 @@
                   </div>
 
                   <div class="price">
-                    <span id="price">159.000 đ</span>
+                    <span id="price">159000</span>
                   </div>
 
                 </div>
@@ -273,19 +243,19 @@
           <div class="amount">
 
             <div class="subtotal">
-              <span>Tạm tính</span> <span id="subtotal">248.000 đ</span>
+              <span>Tạm tính</span> <span id="subtotal">248000</span>
             </div>
 
             <div class="tax">
-              <span>Giảm giá</span> <span id="discount">0 đ</span>
+              <span>Giảm giá</span> <span id="discount">0</span>
             </div>
 
             <div class="shipping">
-              <span>Phí giao hàng</span> <span id="shipping">30.000 đ</span>
+              <span>Phí giao hàng</span> <span id="shipping">30000 </span>
             </div>
 
             <div class="total">
-              <span>Tạm tính</span> <span id="total">278.000 đ</span>
+              <span>Tạm tính</span> <span id="total">278000</span>
             </div>
 
           </div>
@@ -297,9 +267,12 @@
     </div>
 
   </main>
-  <script src="./script.js"></script>
+  <script src="../js/script.js"></script>
+  <script src="../js/address.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'> </script>
+  <script src='https://cdn.jsdelivr.net/gh/vietblogdao/js/districts.min.js'> </script>
   
 
 </body>

@@ -1,18 +1,7 @@
 .row{
 width: 100%;
 }
-/* body{
-    width: 100%;
-    height: 85%;
-    display: block;
 
-} */
-/* #ft{
-position: relative;
-    bottom: 0;
-    width: 100%;
-
-} */
 #info{
   
     width: 90%;
@@ -110,6 +99,7 @@ font-size: 50px;
 min-height: 100px;
 min-width: 100px;
 margin: 20px 40%;
+
 
 }
 #buy #btn a{

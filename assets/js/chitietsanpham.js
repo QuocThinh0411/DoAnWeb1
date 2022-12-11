@@ -15,8 +15,13 @@ if(index == 2)
 }
 
 function gotocart(){
+ 
     window.location="../layout/cart.html"
 }
+      
+
+
+
 
 function chonmau(){
     var value = document.getElementById("chonmau");

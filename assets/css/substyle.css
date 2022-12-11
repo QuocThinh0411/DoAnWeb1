@@ -1,6 +1,7 @@
 /*
  * Load font
  */
+
  @font-face {
     font-family: NunitoSanI;
     src: url(../fonts/NunitoSan/NunitoSans-Italic.ttf);
@@ -32,10 +33,14 @@
   /*
    * Globals
    */
-  
   body {
-    font-family: NunitoSanRegular;
+    /* font-family: NunitoSanRegular; */
     color: #555;
+    font-family: Montserrat;
+
+    font-weight: bolder;
+    src:url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap') ;
+
   }
   
   h1, .h1,
@@ -45,8 +50,10 @@
   h5, .h5,
   h6, .h6 {
     margin-top: 0;
-    font-family: GeometricExtraBold;
-    font-weight: normal;
+    /* font-family: GeometricExtraBold; */
+    font-weight: bolder;
+    font-size: 16px;
+    
     color: #000;
   }
   
@@ -1960,7 +1967,7 @@
       color: #000;
       /* font-family: GeometricExtraBold;
        */
-    
+      font-weight: bolder;
       font-size: 18px;
       margin-top:30px;
     }
@@ -2369,7 +2376,7 @@
   .prd1-right-items .thumbnail .caption{
     text-align: center;
     padding: 0px;
-    margin-top: -40px;
+    margin-top: -20px;
   }
   
   .prd1-right-items .type {
@@ -2388,10 +2395,14 @@
   }
   .prd-detail-slide .name,
   .prd1-right-items .name {
-    font-family: NunitoSanExtraBold;
+    /* font-family: NunitoSanExtraBold; */
+    font-family: Montserrat; 
+    src:url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap') ;
     font-size: 16px;
     color: #000;
+    font-weight: bolder;
     --bs-link-hover-color: #F9d342;
+    
     
   }
   .prd1-right-items .post-name {
@@ -2430,7 +2441,10 @@
   }
   .prd-detail-slide .price,
   .prd1-right-items .price {
-    font-family: NunitoSanExtraBold;
+    /* font-family: NunitoSanExtraBold; */
+    font-family: Montserrat; 
+    font-weight: bolder;
+    src:url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap') ;
     font-size: 16px;
     color: #000;
   }
@@ -7531,6 +7545,9 @@
   .thumbnail2 .caption .price  {
     font-size: 16px;
     text-align: center;
+  }
+  #navigation{
+
   }
 
     /* ------------- End Popup Reason Cancel Order ------------------ */

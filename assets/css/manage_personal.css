@@ -1,8 +1,13 @@
 
+
+#orderlist_footer{
+width: 100%;
+height: 100%;
+}
 /*css phần cố định bên trái */
 .container {
-    max-width: 1440px;
-    min-height: 100vh;
+  width: auto;
+  height: auto;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -14,7 +19,7 @@
     
   body{
     font-family: 'Montserrat', sans-serif;
-    padding: 9px;
+    
 
 }
   .list-information{
@@ -173,7 +178,7 @@ label {
 }
 .order-status{
   color: #2f5acf;
-  background-color: yellow;
+  background-color: white;
   padding: 0px 10px;
 }
 .order-body{

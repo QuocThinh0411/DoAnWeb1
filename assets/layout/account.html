@@ -7,38 +7,80 @@
     <title>Thông tin cá nhân</title>
     <link rel="stylesheet" href="../css/manage_personal.css">
     <link rel="stylesheet" type="text/css" href="../font_icon/fontawesome-free-6.2.1-web/css/all.min.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <script src="/assets/js/header.js"></script>
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../font_icon/themify-icons/themify-icons.css" type="text/css">
+   
 
 </head>
 <body>
-    <div class="container">
-        <div class="item-flex">
-            <section class="list-information">
-                <h2 id="finalname">Nguyễn Văn Nhân</h2>
-                <div class="list-form">
-                    <div class="more-options">
-                      <button class="option">
-                        <span> <a href="../layout/account.html">Thông tin cá nhân</a></span>
-                      </button> <br>
-                      <button class="option">
-                        <span> <a href="../layout/order_list.html">Danh sách đơn hàng</a></span>
-                      </button><br>
-                      <!-- <button class="option">
-                        <span>Đánh giá</span>
-                      </button><br>
+  <div id="header">
+    <header class="row">
+        <ul id="nav">
+            <li><a href="../../index.html"><img id="logo" src="../image/logo (7).png"></a></li>
+            <li id="none"></li>
+            <li>
+                <a href="../layout/danhmucsp.html"> Danh sách 
+                    <i class="ti-angle-down"></i>
+                     </a>
+                <ul class="subnav">
+                    <li><a href="../layout/danhmucsp_quanshort.html">Quần short</a></li>
+                    <li><a href="../layout/danhmucsp_aosomi.html">Áo sơ mi</a></li>
+                    <li><a href="../layout/danhmucsp_aopolo.html">Áo polo</a></li>
+            </ul>
+            </li>
+            <li><a href="../layout/about.html">About us</a></li>
+            <li><a href="../layout/discount.html">Khuyễn Mãi</a></li>
+            <li id="none"></li>
+            <li>
+                 <form action="" id="search-box">
+                    
+                    <input placeholder="Điền tên sản phẩm" type="text" id="search-text">
+                    <button id="search-btn"><i class="ti-search"></i></button>
+                </form>
+            </li>
+            
+            <li><a href="../layout/cart.html"><i class="shopping-cart-icon ti-shopping-cart"></i></a></li>
+            <li><a href="../layout/login.html"><i class="user-icon ti-user"></i></a>
+                <ul class="subnav" id="whenlogin" >
+                   
+                    <li><a href="../layout/account.html">Tài khoản </a></li>
+                    <li><a onclick="dangxuat()" >Đăng xuất</a></li>
 
-                      <button class="option">
-                        <span>Voucher</span>
-                      </button><br>
-                      <button class="option">
-                        <span>Ý kiến đánh giá</span>
-                      </button><br> -->
-                      <button class="option">
-                        <span>Thoát</span>
-                      </button><br>
-                    </div>
-            </section>
+            </ul></li>
+        </ul>
+    </header>
+</div>
+    <div style="margin-top: 10%; margin-bottom: 10%;" class="container">
+        <div class="item-flex">
+          <section class="list-information">
+            <h2 style="margin: 5%;">Nguyễn Văn Nhân</h2>
+            <div class="list-form">
+                <div class="more-options">
+                  <button class="option">
+                    <span>Thông tin cá nhân</span>
+                  </button> <br>
+                  <button class="option">
+                    <span>Danh sách đơn hàng</span>
+                  </button><br>
+                  <button class="option">
+                    <span>Đánh giá</span>
+                  </button><br>
+
+                  <button class="option">
+                    <span>Voucher</span>
+                  </button><br>
+                  <button class="option">
+                    <span>Ý kiến đánh giá</span>
+                  </button><br>
+                  <button class="option">
+                    <span>Thoát</span>
+                  </button><br>
+                </div>
+        </section>
             <section class="detail-information">
-              <h2>Thông tin tài khoản</h2>
+              <h2 style="margin: 1%;">Thông tin tài khoản</h2>
               <form action="">
               <div class="personal-form">
                 <div class="detail-options">
@@ -87,5 +129,59 @@
             </section>
         </div>
     </div>
+
+ <footer class="footer">
+        <div class="ft-container">
+            <div class="ft-row">
+                <div class="footer-col">
+                    <a href="#"><img width="160dp" height="60dp" src="../image/SunHappy.png"></a> <br> <br>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/sunhappy.vn"><i class="ti-facebook"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="ti-instagram"></i></a>
+                    </div>
+
+                    <div>
+                        <ul style="padding-left: 0rem;" class="ft-ul">
+                            <li><a href="#">0909.673.694</a></li>
+                            <li><a href="#">cskh.sunhappy@gmail.com</a> </li>
+                            <li><a href="#">211 Linh Đông, P.Linh Đông, Thủ Đức, TP.HCM</a></li>
+
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="footer-col">
+                    <h4>Về SunHappy </h4>
+                    <ul style="padding-left: 0rem;" class="ft-ul">
+                        <li><a href="#">Câu chuyện SunHappy</a></li>
+                        <li><a href="#">Nhà máy</a></li>
+                        <li><a href="#">Về sản phẩm</a></li>
+                        <li><a href="#">Tuyển dụng</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Sản phẩm</h4>
+                    <ul style="padding-left: 0rem;" class="ft-ul">
+                        <li><a href="#">Áo phông</a></li>
+                        <li><a href="#">Áo sơ mi</a></li>
+                        <li><a href="#">Áo polo</a></li>
+                        <li><a href="#">Quần đùi</a></li>
+                        <li><a href="#">Quần dài</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Hỗ trợ khách hàng</h4>
+                    <ul style="padding-left: 0rem;" class="ft-ul">
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                        <li><a href="#">Chính sách đổi trả</a></li>
+                        <li><a href="#">Chính sách giao hàng</a></li>
+                        <li><a href="#">Hướng dẫn mua hàng</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

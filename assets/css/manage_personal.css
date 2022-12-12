@@ -1,0 +1,289 @@
+
+/*css phần cố định bên trái */
+.container {
+    max-width: 1440px;
+    min-height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .item-flex {
+    display: flex;
+    flex-grow: 1;
+  }
+    
+  body{
+    font-family: 'Montserrat', sans-serif;
+    padding: 9px;
+
+}
+  .list-information{
+    width: 30%;
+    margin-left: 20px;
+    padding: 40px var(--px);
+    border-right: 1px;
+  }
+  .list-form { margin-bottom: 40px;}
+  
+  .more-options {  
+    align-items: center;
+    gap: 30px;
+  }
+  .more-options .option {
+    border-radius: 20px;
+    width: 100%;
+    display:     flex;
+    align-items: center;
+    padding: 15px 30px;
+    cursor: pointer;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .more-options .option span{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+   
+  }
+
+  .more-options .option:hover{
+    background-color: gainsboro;
+  }
+  .more-options .option span:active{
+    opacity: 0.5;
+  }
+
+  /*css phần flex bên phải*/
+  .label-default {
+    padding-left: 30px;
+    margin-bottom: 5px;
+    font-size: var(--fs-14);
+    color: rgb(2, 2, 2);
+ 
+  }
+  
+ /* .name{
+  width: 200px;
+  background-color: coral;
+  border: 2px solid red;
+ } */
+
+.detail-information{
+  width: 80%;
+  margin-left: 40px;
+  padding: 40px var(--px);
+  display:         flex;
+  flex-direction:  column;
+  padding: 9px;
+
+}
+.input-default {
+  padding: 10px 20px;
+  margin-left: 20px;
+  background-color: white;
+  border-radius: 10px;
+  width: 60%;
+  color: yellowgreen;
+  gap: 30px;
+}
+.detail-options{
+    display: flex;
+    flex-direction: row;
+}
+label {
+    width: 200px;
+    /* background-color: aqua; */
+    margin-left:  20px;
+    text-align: left;
+}
+/* .name,
+  .phone-number { margin-bottom: 20px; } */
+  
+.personal-form .input-default{
+  border: 2px solid #d9d9d9;
+}
+.btn{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  border-radius: 16px;
+  color: #fff;
+  padding: 0 30px;
+  transition: all .2s;
+  cursor: pointer;
+  background-color: #2f5acf;
+    font-family: 'Montserrat', sans-serif;
+ 
+}
+.btn button{
+  color: rgb(0, 0, 0);
+}
+
+.btn button:hover{
+  background-color: rgb(210, 29, 29);
+}
+.btn button:active{
+  opacity: 0.5;
+}
+/* phần đơn hàng*/
+.head-box{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  margin: 10px 20px;
+  border-radius: 5px;
+  border-bottom: 2px solid #ddd;
+  border-right: 2px solid #ddd;
+  border-top: 2px solid red;
+  border-left: 2px solid red;
+}
+.list{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 95px;
+    padding-right: 20px;
+}
+
+.list span{
+  margin: 10px 10px;
+}
+.center-box{
+ 
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  margin: 10px 20px;
+  border-radius: 5px;
+  
+}
+.order-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: #2f5acf;
+    border-radius: 16px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 2;
+    background: #2f5acf;
+    box-sizing: border-box;
+    
+}
+.order-status{
+  color: #2f5acf;
+  background-color: white;
+  padding: 0px 10px;
+}
+.order-body{
+  border: 1px solid #d9d9d9;
+  background-color: white;
+  margin-top: -16px;
+  border-radius: 0 0 16px 16px;
+  position: relative;
+  z-index: 1;
+  padding-top: 16px;
+}
+.order-item{
+  padding: 1rem 30px;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+
+}
+.order-img{
+  flex-basis: 10%;
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+  margin: 5px 5px 5px 5px;
+}
+.anhnho{
+  width: 150px;
+  height: 135px;
+}
+.order-item-info{
+  padding-bottom: 30px;
+  flex: 1;
+  flex-basis: 60%;
+  padding-left: 10px;
+}
+.order-item-button{
+  flex-basis: 30%;
+  margin-top: 120px;
+  margin-left: 50px;
+}
+
+.order-footer{
+  display: flex;
+  justify-content: flex-end;
+  border: 1px solid #d9d9d9;
+  background-color: #d9d9d9;
+  padding: calc(0.5rem + 16px) 30px 0.5rem;
+  margin-top: -16px;
+  border-radius: 0 0 16px 16px;
+  position: relative;
+  z-index: 0;
+}
+.order-title, .order-date {
+  padding-bottom: 5px;
+}
+/*css phần thông tin chi tiết đơn mua hàng*/
+/* th,td{
+  border: 1px solid black;
+  border-collapse:collapse;
+
+} */
+/* .table{
+  border-radius: 50px;
+}
+
+
+.table thead>tr th:first-child {
+  border-radius: 16px 0 0 16px;
+} */
+/* // */
+.table{
+  width:100%;
+  border-spacing:0;
+  background:#d9d9d9;
+  border-radius:16px
+}
+.table td,.table th{
+  padding:10px 20px}
+.table thead>tr th{
+  color:#fff;background-color:#2f5acf;font-weight:500}
+.table thead>tr th:first-child{
+  border-radius:16px 0 0 16px}
+.table thead>tr th:last-child{
+  
+  border-radius:0 16px 16px 0}
+.table tbody tr:nth-child(2n) td{background-color:rgb(255, 254, 254)}
+.table tbody tr:not(:nth-child(2n)) td{background-color:#d9d9d9}
+.table tbody tr:last-child td:first-child{border-radius:0 0 0 16px}
+.table tbody tr:last-child td:last-child{border-radius:0 0 16px 0}
+
+.order-heading{
+  font-size:30px;
+  margin:10px 20px 5px;
+}
+.order-title{
+  display:block;
+  border:1px solid #000;
+  border-radius:16px;
+  
+}
+  
+.box{
+  border:1px solid #000;
+  border-radius:16px;
+  padding:1rem 3rem}
+.h3{
+margin: 5px 5px;
+}
+
+
+   

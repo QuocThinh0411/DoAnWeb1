@@ -19,8 +19,32 @@
      <link rel="stylesheet" type="text/css" href="../font_icon/fontawesome-free-6.2.1-web/css/all.min.css">
     <script src="events_on_dssp.js"></script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="../data/product.json"></script>
+    <script>
+        let app = angular.module("angularApp", []);
+        app.controller("ProductController", function($scope, $http) {
+            $http({
+                method: "GET",
+                url: "../data/product.json"
+            }).then(function(response) {
+                    $scope.product = response.data;
+                },
+                function error(response) {
+                    $scope.error = response.statusText;
+                });
+
+            $scope.selectProduct = function(val) {
+                $scope.productDetails = val;
+            }
+        })
+
+    </script>
+
+
 </head>
-<body onload="addevents()">
+<body ng-app="angularApp" onload="addevents()">
     <!-- header-->
     <div id="header">
         <header class="row">
@@ -31,10 +55,11 @@
                     <a href="#"> Danh sách 
                         <i class="ti-angle-down"></i>
                          </a>
-                    <ul class="subnav">
-                        <li><a href="#">Danh sách</a></li>
+                    <ul class="subnav" id="myFilterContainer">
+                        <li><a href="#">Tất cả sản phẩm</a></li>
                         <li><a href="#">Áo sơ mi</a></li>
-                        <li><a href="#">Áo ba lỗ</a></li>
+                        <li><a href="#" >Áo Polo</a></li>
+                        <li><a href="#" >Quần short</a></li>
                 </ul>
                 </li>
                 <li><a href="#">About us</a></li>
@@ -43,7 +68,7 @@
                 <li>
                      <form action="" id="search-box">
                         
-                        <input placeholder="Điền tên sản phẩm" type="text" id="search-text">
+                        <input placeholder="Điền tên sản phẩm" type="text" id="search-text" ng-model="search">
                         <button id="search-btn"><i class="ti-search"></i></button>
                     </form>
                 </li>
@@ -181,13 +206,13 @@
                 </div>
 
                 <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 prd1-right">
-                    <div class="row prd1-right-items">
-                    
-                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 item">
+                    <div class="row prd1-right-items" ng-controller="ProductController">
+                
+                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 item" ng-repeat="p in product|filter:'áo polo'">
                             <div class="thumbnail">
                                 <div class="cont-item">
-                                    <a href="#">
-                                        <img class="inormal" src="../image/sanpham (6).jpg">
+                                    <a href="./chitietsanpham.html?productId={{p.id}}">
+                                        <img class="inormal" src="{{'../image/'+p.image}}">
                                     </a>
                                 </div>
                                 <div class="button"></div>
@@ -195,15 +220,15 @@
                                 
                                     <h3 class="divider"></h3>
                                     <h3 class="name">
-                                        <a href="#" >Vintas Soda Pop - Low Top</a>
+                                        <a href="#" >{{p.name}}</a>
                                     </h3>
                                     <h3 class="price">
-                                        190.000 VND                                                                    
+                                        {{p.price}}                                                                  
                                     </h3>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 item">
+                        <!-- <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 item">
                             <div class="thumbnail">
                                 <div class="cont-item">
                                     <a href="#">
@@ -222,8 +247,8 @@
                                     </h3>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 item">
+                        </div> -->
+                        <!-- <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 item">
                             <div class="thumbnail">
                                 <div class="cont-item">
                                     <a href="#">
@@ -242,8 +267,8 @@
                                     </h3>
                                 </div>
                             </div>
-                        </div>    
-                        <div class="item-break" ></div>
+                        </div>     -->
+                        <!-- <div class="item-break" ></div>
                         <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 item">
                             <div class="thumbnail">
                                 <div class="cont-item">
@@ -324,8 +349,8 @@
                                     </h3>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 item">
+                        </div> -->
+                        <!-- <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 item">
                             <div class="thumbnail">
                                 <div class="cont-item">
                                     <a href="#">
@@ -344,8 +369,8 @@
                                     </h3>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 item">
+                        </div> -->
+                        <!-- <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 item">
                             <div class="thumbnail">
                                 <div class="cont-item">
                                     <a href="#">
@@ -364,7 +389,7 @@
                                     </h3>
                                 </div>
                             </div>
-                        </div>    
+                        </div>     -->
                     <div class="item-break" ></div>
                 </div>
                 </div>

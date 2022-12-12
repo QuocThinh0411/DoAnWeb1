@@ -38,14 +38,13 @@ h1
 }
 #box:hover
 {
-    box-shadow: 1px 6px 3px 0 rgb(208, 222, 117);
+    box-shadow: 1px 6px 3px 0 rgb(215, 217, 201);
 }
 #containerClothing img
 {
     width: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    
 }
 
 #details
@@ -61,13 +60,35 @@ h1
 h3
 {
     font-size: 16px;
+    margin: 5px;
 }
 h4
 {
     font-weight: 100;
+    margin: 0px;
 }
 h2
 {
     color: rgb(3, 94, 94);
+}
+.cart{
+    /* text-align: center; */
+    padding: 5px 10px;
+    /* background-color: aqua; */
+    font-size: 10px;
+    /* width: 60%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart  button{
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: yellow;
+    cursor: pointer;
+}
+.cart button:hover{
+   background-color: blanchedalmond;
+   
 }
 

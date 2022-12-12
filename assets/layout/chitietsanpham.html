@@ -17,8 +17,32 @@
     <link href="../css/main.css" rel="stylesheet" type="text/css">
     <script src="../js/chitietsanpham.js"></script>
 
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script>
+        let urlparams = new URLSearchParams(location.search);
+        var iD = urlparams.get('productId');
+    </script>
+    <script>
+        let app = angular.module("angularApp", []);
+        app.controller("DetailController", function($scope, $http) {
+            $http({
+                method: "GET",
+                url: "../data/product.json"
+            }).then(
+                function success(response) {
+                    $scope.selectedProduct = response.data.find(value => value.id == iD);
+                },
+                function error(response) {
+                    $scope.error = response.statusText;
+                }
+            )
+        })
+    </script>
+
 </head>
-<body style="background-image: url(../image/background3.jpg);">
+<body ng-app="angularApp" ng-controller="DetailController" style="background-image: url(../image/background3.jpg);">
     <!-- header -->
     <div id="header">
         <header class="row">
@@ -59,14 +83,14 @@
             <p>Trang chủ <i class="ti-angle-right "></i>
                 <a href="../layout/danhmucsp.html">Danh mục sản phẩm</a>
                 <i class="ti-angle-right "></i>
-                <a href="../layout/danhmucsp_aopolo.html">Áo polo</a>
+                <a href="../layout/danhmucsp_aopolo.html">{{selectedProduct.category}}</a>
                 <i class="ti-angle-right "></i>
                 <a href="../layout/chitietsanpham.html">Chi tiết</a>
             </p> 
         </div>
         <div id="chitiet">
             <div id="hinhanh">
-                <img id="img_main" src="../image/sanpham (18).jpg">
+                <img id="img_main" src="{{'../image/'+selectedProduct.image}}">
                 <img id="img_1" src="../image/sanpham (14).jpg" >
                 <img id="img_2" src="../image/sanpham (15).jpg" >
                 <img id="img_3" src="../image/sanpham (16).jpg" >
@@ -74,20 +98,20 @@
 
             </div>
             <div id="thongtin">
-                <h2 style="text-align: center; margin: 20px;">Áo polo nam cổ bẻ TSIMPLE</h2>
-                <h3 style=" color: #FC9D45; font-weight: bold;">200.000 VNĐ</h3>
+                <h2 style="text-align: center; margin: 20px;">{{selectedProduct.name}}</h2>
+                <h3 style=" color: #FC9D45; font-weight: bold;">{{selectedProduct.price}}</h3>
                 <div> <h3>Chọn màu: <select onchange="chonmau()" id="chonmau">
-                    <option value="red">Đỏ</option>
-                    <option value="blue">Xanh dương</option>
-                    <option value="green">Xanh lục</option>
-                    <option value="lightblue">Xanh nhạt</option>
+                    <option value="red">{{selectedProduct.colors[0]}}</option>
+                    <option value="blue">{{selectedProduct.colors[1]}}</option>
+                    <option value="green">{{selectedProduct.colors[2]}}</option>
+                    <option value="lightblue">{{selectedProduct.colors[3]}}</option>
                 </select></h3>  </div>
                 <div> <h3>Chọn size:
                     <select id="chonsize">
-                        <option value="M">S</option>
-                        <option value="Xl">M</option>
-                        <option value="XXL">L</option>
-                        <option value="XXXl">XXL</option>
+                        <option value="M">{{selectedProduct.sizes[0]}}</option>
+                        <option value="Xl">{{selectedProduct.sizes[1]}}</option>
+                        <option value="XXL">{{selectedProduct.sizes[2]}}</option>
+                        <option value="XXXl">{{selectedProduct.sizes[3]}}</option>
                     </select>
                 </h3> </div>
                 <div>
@@ -104,16 +128,10 @@
                   
                 </div>
                 <div id="mota">
-                    <i class="ti-star"></i> <p > Sản phẩm làm từ chất vải tốt nhất, nhập trên con đường tơ lụa. Vải Denim được dệt toàn bộ tại nhà máy Nhơn Trạch, Đồng Nai của Saitex
-                        Chất liệu: 99% Regenerative Cotton (Cotton Tái sinh) + 1% Elastane, tạo sự co giãn đem đến sự thoải mái khi vận động
-                         Định lượng vải nhẹ chỉ với 13.7 Oz
-                         Kéo sợi và dệt nhuộm theo quy trình sạch và bền vững tại Việt Nam </p>
+                    <i class="ti-star"></i> <p style="font-family:montserrat">{{selectedProduct.description1}}</p>
 
                         <i class="ti-heart"></i>
-                        <p > Sản phẩm làm từ chất vải tốt nhất, nhập trên con đường tơ lụa. Vải Denim được dệt toàn bộ tại nhà máy Nhơn Trạch, Đồng Nai của Saitex
-                            Chất liệu: 99% Regenerative Cotton (Cotton Tái sinh) + 1% Elastane, tạo sự co giãn đem đến sự thoải mái khi vận động
-                             Định lượng vải nhẹ chỉ với 13.7 Oz
-                             Kéo sợi và dệt nhuộm theo quy trình sạch và bền vững tại Việt Nam </p>
+                        <p style="font-family:montserrat">{{selectedProduct.description2}}</p>
                 </div>
                
               

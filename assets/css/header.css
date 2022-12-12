@@ -1,20 +1,7 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap');
-
-*{
-    font-family: 'Montserrat', sans-serif;
-}
 .row{
     float: left;
     width: 100%;
-}
-
-#whenlogin{
-    visibility: visible;
-}
-
-#whenlogin:hover{
-
 }
 
 #nav > li {
@@ -49,7 +36,7 @@
   color: #000;
 }
 #nav .subnav a:hover{
-    background-color: rgb(255, 255, 255);
+    background-color: aliceblue;
     color: #295f2d; 
   }
 
@@ -64,7 +51,7 @@
     top: 0;
     right: 0;
     left: 0;
-   z-index: 99999999;
+   
 }
 #nav li:hover .subnav {
     display: block;
@@ -77,7 +64,7 @@
     width: 100%;
     list-style-type: none;
     position: absolute;
-    background-color: rgb(255, 255, 255);
+    background-color: aliceblue;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
 
 }
@@ -91,7 +78,6 @@
 #search-box{
     background-color: #fff;
     border-radius: 30px;
-    margin-bottom: 10px;
     
     
 }

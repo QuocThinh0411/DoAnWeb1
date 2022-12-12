@@ -18,27 +18,27 @@
      <link rel="stylesheet" href="../css/footer.css">
      <link rel="stylesheet" type="text/css" href="../font_icon/fontawesome-free-6.2.1-web/css/all.min.css">
      <script src="events_on_dssp.js"></script>
-
+     <script src="/assets/js/header.js"></script>
 </head>
 <body onload="addevents()">
     <!-- header -->
     <div id="header">
         <header class="row">
             <ul id="nav">
-                <li><a href="index.html"><img id="logo" src="../image/logo (7).png"></a></li>
+                <li><a href="../../index.html"><img id="logo" src="../image/logo (7).png"></a></li>
                 <li id="none"></li>
                 <li>
-                    <a href="#"> Danh sách 
+                    <a href="../layout/danhmucsp.html"> Danh sách 
                         <i class="ti-angle-down"></i>
                          </a>
                     <ul class="subnav">
-                        <li><a href="#">Danh sách</a></li>
-                        <li><a href="#">Áo sơ mi</a></li>
-                        <li><a href="#">Áo ba lỗ</a></li>
+                        <li><a href="../layout/danhmucsp_quanshort.html">Quần short</a></li>
+                        <li><a href="../layout/danhmucsp_aosomi.html">Áo sơ mi</a></li>
+                        <li><a href="../layout/danhmucsp_aopolo.html">Áo polo</a></li>
                 </ul>
                 </li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Khuyễn Mãi</a></li>
+                <li><a href="../layout/about.html">About us</a></li>
+                <li><a href="../layout/discount.html">Khuyễn Mãi</a></li>
                 <li id="none"></li>
                 <li>
                      <form action="" id="search-box">
@@ -48,11 +48,17 @@
                     </form>
                 </li>
                 
-                <li><a href="#"><i class="shopping-cart-icon ti-shopping-cart"></i></a></li>
-                <li><a href="#"><i class="user-icon ti-user"></i></a></li>
+                <li><a href="../layout/cart.html"><i class="shopping-cart-icon ti-shopping-cart"></i></a></li>
+                <li><a href="../layout/account.html"><i class="user-icon ti-user"></i></a>
+                    <ul class="subnav" id="whenlogin" >
+                       
+                        <li><a href="../layout/account.html">Tài khoản </a></li>
+                        <li><a onclick="dangxuat()" >Đăng xuất</a></li>
+
+                </ul></li>
             </ul>
         </header>
-      </div>
+    </div>
     <!-- end header --> 
 
     <!-- content --> 

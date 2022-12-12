@@ -16,6 +16,8 @@
     <!-- file css chung để lấy size,font: main -->
     <link href="../css/main.css" rel="stylesheet" type="text/css">
     <script src="../js/chitietsanpham.js"></script>
+    <script src="/assets/js/header.js"></script>
+    <link rel="stylesheet" href="../css/footer.css">
 
     
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
@@ -42,7 +44,7 @@
     </script>
 
 </head>
-<body ng-app="angularApp" ng-controller="DetailController" style="background-image: url(../image/background3.jpg);">
+<body ng-app="angularApp" ng-controller="DetailController">
     <!-- header -->
     <div id="header">
         <header class="row">
@@ -71,7 +73,13 @@
                 </li>
                 
                 <li><a href="../layout/cart.html"><i class="shopping-cart-icon ti-shopping-cart"></i></a></li>
-                <li><a href="../layout/account.html"><i class="user-icon ti-user"></i></a></li>
+                <li><a href="../layout/account.html"><i class="user-icon ti-user"></i></a>
+                    <ul class="subnav" id="whenlogin" >
+                       
+                        <li><a href="../layout/account.html">Tài khoản </a></li>
+                        <li><a onclick="dangxuat()" >Đăng xuất</a></li>
+
+                </ul></li>
             </ul>
         </header>
     </div>
@@ -197,6 +205,61 @@
            
             </div>
 
+          <div id="chitietft">
+            <footer class="footer">
+                <div class="ft-container">
+                    <div class="ft-row">
+                        <div class="footer-col">
+                            <a href="#"><img width="160dp" height="60dp" src="../image/SunHappy.png"></a> <br> <br>
+                            <div class="social-links">
+                                <a href="https://www.facebook.com/sunhappy.vn"><i class="ti-facebook"></i></a>
+                                <a href="#"><i class="fab fa-tiktok"></i></a>
+                                <a href="#"><i class="ti-instagram"></i></a>
+                            </div>
+        
+                            <div>
+                                <ul style="padding-left: 0rem;" class="ft-ul">
+                                    <li><a href="#">0909.673.694</a></li>
+                                    <li><a href="#">cskh.sunhappy@gmail.com</a> </li>
+                                    <li><a href="#">211 Linh Đông, P.Linh Đông, Thủ Đức, TP.HCM</a></li>
+        
+                                </ul>
+                            </div>
+        
+                        </div>
+        
+                        <div class="footer-col">
+                            <h4>Về SunHappy </h4>
+                            <ul style="padding-left: 0rem;" class="ft-ul">
+                                <li><a href="#">Câu chuyện SunHappy</a></li>
+                                <li><a href="#">Nhà máy</a></li>
+                                <li><a href="#">Về sản phẩm</a></li>
+                                <li><a href="#">Tuyển dụng</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Sản phẩm</h4>
+                            <ul style="padding-left: 0rem;" class="ft-ul">
+                                <li><a href="#">Áo phông</a></li>
+                                <li><a href="#">Áo sơ mi</a></li>
+                                <li><a href="#">Áo polo</a></li>
+                                <li><a href="#">Quần đùi</a></li>
+                                <li><a href="#">Quần dài</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Hỗ trợ khách hàng</h4>
+                            <ul style="padding-left: 0rem;" class="ft-ul">
+                                <li><a href="#">Chính sách bảo mật</a></li>
+                                <li><a href="#">Chính sách đổi trả</a></li>
+                                <li><a href="#">Chính sách giao hàng</a></li>
+                                <li><a href="#">Hướng dẫn mua hàng</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+          </div>
         </div>
 
      </div>

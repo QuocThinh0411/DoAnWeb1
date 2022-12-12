@@ -1,3 +1,18 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+   
+}
+#body{
+    width: 100%;
+    height: 100%;
+}
+
 #hinhanh{
     width: 30%;
     
@@ -67,13 +82,23 @@
 #chitiet{
     align-items: center;
     align-self: center;
+    width: 100%;
+    height: 100%;
 }
 #thongtinbosung{
     float: left;
     
     height: 400px;
-    width: 95%;
-    margin: 2.5%;
+    width: 90%;
+    margin: 5%;
+
+   
+}
+#chitietft{
+    float: left;
+    height: 300px;
+    width: 100%;
+ 
    
 }
 .btn_sub{

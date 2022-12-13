@@ -127,35 +127,42 @@
     font-weight: bold;
   }
   
-  .payment-form { margin-bottom: 40px;}
-  
-  .payment-method {  
-    align-items: center;
-    gap: 30px;
-    margin-bottom: 20px;
+  .payment-form { margin-bottom: 40px;
   }
-  
-  .payment-method .method {
-    border: 1px solid var(--quick-silver);
-    border-radius: var(--radius);
+  input[type="radio"]{
+    display: none;
+}
+.label-rad{
     width: 100%;
-    display:     flex;
+    position: relative;
+    color: black;
+    border: 1px solid hsl(0, 0%, 80%);;
+    border-radius: 5px;
+    display: flex;
     align-items: center;
-    padding: 15px 30px;
-    gap: 20px;
-    cursor: pointer;
-  }
-  
-  .payment-method .selected { border-color: #ffd24c; }
-  
-  .payment-method .method .icon { font-size: 20px; }
-  
-  .payment-method .method .checkmark {
-    margin-left: auto;
-    color: var(--quick-silver);
-  }
-  
-  .payment-method .method .fill { color: #ffd24c; }
+    padding: 5px 0px;
+   
+
+}
+.label-rad::before{
+    content: "";
+    height: 15px;
+    width: 15px;
+    border: 2px solid hsl(0, 0%, 80%);;
+    border-radius: 50%;
+    margin: 10px 20px;
+}
+input[type="radio"]:checked + .label-rad{
+    background-color: #ffd24c;
+    color: white;
+
+}
+input[type="radio"]:checked + .label-rad::before{
+    height: 15px;
+    width: 15px;
+    border: 4px solid white;
+    
+}
   
   .label-default {
     padding-left: 10px;
@@ -200,12 +207,12 @@
   
   .expire-date .input-flex input { text-align: center; }
   
-  .btn { border-radius: var(--radius); }
+  .btn { border-radius: var(--radius); width: 100%;}
   
   .btn:active { transform: scale(0.99); }
   
   .btn:focus {
-    color: var(--white);
+    color: white;
     background: var(#ffd24c);
     outline: 2px solid var(#ffd24c);
     outline-offset: 2px;
@@ -214,7 +221,7 @@
   .btn-primary {
     background: #ffd24c;
     font-weight: var(--fw-5);
-    color: var(--white);
+    color: white;
     padding: 13px 45px;
   }
   
@@ -354,13 +361,6 @@
       width: 100%;
       border-bottom: 1px solid var(--gainsboro);
     }
-    
-    .thongbao{
-      color: rgb(201, 13, 13);
-      padding-top: 20px;
-      padding-left: 20px;
-    }
-  
     .cart .wrapper { margin-top: auto; }
   
     .cart .cart-item-box {
@@ -377,36 +377,21 @@
   
   
   @media (max-width: 768px) {
-  
     :root { --px: 40px; }
-  
     .cart { grid-template-columns: 1fr; }
-  
     .discount-token { border-top: 1px solid var(--gainsboro); }
-  
     .wrapper-flex { gap: 20px; }
-  
   }
   
-  
-  
-  
-  
   @media (max-width: 567px) {
-  
     :root { --px: 20px; }
-  
     .payment-method,
     .input-flex {
       flex-direction: column;
       gap: 20px;
     }
-  
     .payment-method .method { width: 100%; }
-  
     .input-flex .expire-date,
     .input-flex .cvv { width: 100%; }
-  
     .expire-date .input-flex { flex-direction: row; }
-  
   }

@@ -9,7 +9,10 @@ html {
     font-family: 'Montserrat', sans-serif;
     background-color: #f2f3ef;
 }
-
+ul, li{
+    margin: 0;
+    padding: 0;
+}
 html{
     width: 100%;
     height: 100%;

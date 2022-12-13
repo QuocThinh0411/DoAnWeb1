@@ -108,21 +108,30 @@
             </div>
             <div id="thongtin">
                 <h2 style="text-align: center; margin: 20px;">{{selectedProduct.name}}</h2>
-                <h3 style=" color: #FC9D45; font-weight: bold;">{{selectedProduct.price}}</h3>
-                <div> <h3>Chọn màu: <select onchange="chonmau()" id="chonmau">
-                    <option value="red">{{selectedProduct.colors[0]}}</option>
-                    <option value="blue">{{selectedProduct.colors[1]}}</option>
-                    <option value="green">{{selectedProduct.colors[2]}}</option>
-                    <option value="lightblue">{{selectedProduct.colors[3]}}</option>
-                </select></h3>  </div>
-                <div> <h3>Chọn size:
-                    <select id="chonsize">
+                <h3 style=" color: #FC9D45; ">{{selectedProduct.price}}</h3>
+                <div > 
+                    <h3 >Chọn màu:   </h3> 
+                        <select onchange="chonmau()" id="chonmau">
+                            <option value="red">{{selectedProduct.colors[0]}}</option>
+                            <option value="blue">{{selectedProduct.colors[1]}}</option>
+                            <option value="green">{{selectedProduct.colors[2]}}</option>
+                            <option value="lightblue">{{selectedProduct.colors[3]}}</option>
+                          </select>
+                   
+              </div>
+                <div >
+                    <h3>Chọn size:   </h3> 
+                        <select id="chonsize">
                         <option value="M">{{selectedProduct.sizes[0]}}</option>
                         <option value="Xl">{{selectedProduct.sizes[1]}}</option>
                         <option value="XXL">{{selectedProduct.sizes[2]}}</option>
                         <option value="XXXl">{{selectedProduct.sizes[3]}}</option>
-                    </select>
-                </h3> </div>
+                        </select>
+                   
+               </div>
+
+
+
                 <div>
                     <button class="btn_sub" name="button" value="OK" type="button" onclick="addtocart()"    ><i class="ti-plus"></i> Thêm vào giỏ hàng  </button>  
 <script>  
@@ -145,6 +154,8 @@
                
               
             </div>
+
+
             <div id="thongtinbosung">
                 <div>
                     <h2 class="h2center">Có thể bạn cũng thích</h2>

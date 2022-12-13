@@ -87,7 +87,7 @@
     <!-- end header --> 
 
     <!-- content --> 
-    <div id="body" style="margin-top: 80px;">
+    <div id="body" style="margin-top: 70px;">
         <div style="background-color: #F9d342;padding-left: 50px; height: 35px;">
             <p>Trang chủ <i class="ti-angle-right "></i>
                 <a href="../layout/danhmucsp.html">Danh mục sản phẩm</a>
@@ -108,21 +108,30 @@
             </div>
             <div id="thongtin">
                 <h2 style="text-align: center; margin: 20px;">{{selectedProduct.name}}</h2>
-                <h3 style=" color: #FC9D45; font-weight: bold;">{{selectedProduct.price}}</h3>
-                <div> <h3>Chọn màu: <select onchange="chonmau()" id="chonmau">
-                    <option value="red">{{selectedProduct.colors[0]}}</option>
-                    <option value="blue">{{selectedProduct.colors[1]}}</option>
-                    <option value="green">{{selectedProduct.colors[2]}}</option>
-                    <option value="lightblue">{{selectedProduct.colors[3]}}</option>
-                </select></h3>  </div>
-                <div> <h3>Chọn size:
-                    <select id="chonsize">
+                <h3 style=" color: #FC9D45; ">{{selectedProduct.price}}</h3>
+                <div > 
+                    <h3 >Chọn màu:   </h3> 
+                        <select onchange="chonmau()" id="chonmau">
+                            <option value="red">{{selectedProduct.colors[0]}}</option>
+                            <option value="blue">{{selectedProduct.colors[1]}}</option>
+                            <option value="green">{{selectedProduct.colors[2]}}</option>
+                            <option value="lightblue">{{selectedProduct.colors[3]}}</option>
+                          </select>
+                   
+              </div>
+                <div >
+                    <h3>Chọn size:   </h3> 
+                        <select id="chonsize">
                         <option value="M">{{selectedProduct.sizes[0]}}</option>
                         <option value="Xl">{{selectedProduct.sizes[1]}}</option>
                         <option value="XXL">{{selectedProduct.sizes[2]}}</option>
                         <option value="XXXl">{{selectedProduct.sizes[3]}}</option>
-                    </select>
-                </h3> </div>
+                        </select>
+                   
+               </div>
+
+
+
                 <div>
                     <button class="btn_sub" name="button" value="OK" type="button" onclick="addtocart()"    ><i class="ti-plus"></i> Thêm vào giỏ hàng  </button>  
 <script>  
@@ -145,6 +154,8 @@
                
               
             </div>
+
+
             <div id="thongtinbosung">
                 <div>
                     <h2 class="h2center">Có thể bạn cũng thích</h2>
@@ -207,59 +218,64 @@
             </div>
 
           <div id="chitietft">
-            <footer class="footer">
-                <div class="ft-container">
-                    <div class="ft-row">
-                        <div class="footer-col">
-                            <a href="#"><img width="160dp" height="60dp" src="../image/SunHappy.png"></a> <br> <br>
-                            <div class="social-links">
-                                <a href="https://www.facebook.com/sunhappy.vn"><i class="ti-facebook"></i></a>
-                                <a href="#"><i class="fab fa-tiktok"></i></a>
-                                <a href="#"><i class="ti-instagram"></i></a>
-                            </div>
-        
-                            <div>
-                                <ul style="padding-left: 0rem;" class="ft-ul">
-                                    <li><a href="#">0909.673.694</a></li>
-                                    <li><a href="#">cskh.sunhappy@gmail.com</a> </li>
-                                    <li><a href="#">211 Linh Đông, P.Linh Đông, Thủ Đức, TP.HCM</a></li>
-        
+            <footer>
+                <body class="ft-body">
+              
+                  <footer class="footer">
+                     <div class="ft-container">
+                       <div class="ft-row">
+                         <div class="footer-col">
+                                <a href="#"><img width="160dp" height="60dp" src="../image/SunHappy.png"></a> <br> <br>
+                                <div class="social-links">
+                                    <a href="https://www.facebook.com/sunhappy.vn"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://www.tiktok.com/@sunhappy_fashion?_t=8Y51iBjJA25&_r=1"><i class="fab fa-tiktok"></i></a>
+                                    <a href="https://instagram.com/polo.sunhappy?igshid=YmMyMTA2M2Y="><i class="fab fa-instagram"></i></a>
+                                </div> 
+                              
+                                <div>
+                                    <ul class="ft-ul">
+                                        <li><a href="tel:0383503044" >0383.503.044</a></li> 
+                                           <li><a href="mailto:cskh.sunhappy@gmail.com">cskh.sunhappy@gmail.com</a> </li>
+                                           <li><a href="https://goo.gl/maps/phhQ8mNSjGtnzno18">211 Linh Đông, P.Linh Đông, Thủ Đức, TP.HCM</a></li>
+                                       
+                                       </ul>
+                                </div>
+                                
+                         </div>
+                            
+                         <div class="footer-col">
+                           <h4>SunHappy </h4>
+                           <ul class="ft-ul">
+                             <li><a href="../../index.html">Trang chủ</a></li>
+                             <li><a href="about.html">About us</a></li>
+                             <li><a href="discount.html">Khuyến mãi</a></li>
+                             <li><a href="cart.html">Giỏ hàng</a></li>
+                           </ul>
+                         </div>
+                         <div class="footer-col">
+                           <h4>Sản phẩm</h4>
+                           <ul class="ft-ul">
+                             <li><a href="danhmucsp_quanshort.html">Quần short</a></li>
+                             <li><a href="danhmucsp_aosomi.html">Áo sơ mi</a></li>
+                             <li><a href="danhmucsp_aopolo.html">Áo polo</a></li>
+                           </ul>
+                         </div>
+                         <div class="footer-col">
+                                <h4>Quản lý tài khoản</h4>
+                                <ul class="ft-ul">
+                                    <li><a href="account.html">Thông tin cá nhân</a></li>
+                                    <li><a href="order_list.html">Danh sách đơn hàng</a></li>
+                                    <li><a href="login.html">Đăng xuất</a></li>
+                                    <br> <br>
+                                    <li><img width="160dp" height="60dp" src="../image/bo-cong-thuong-1170x780.png"></li>
                                 </ul>
                             </div>
-        
-                        </div>
-        
-                        <div class="footer-col">
-                            <h4>Về SunHappy </h4>
-                            <ul style="padding-left: 0rem;" class="ft-ul">
-                                <li><a href="#">Câu chuyện SunHappy</a></li>
-                                <li><a href="#">Nhà máy</a></li>
-                                <li><a href="#">Về sản phẩm</a></li>
-                                <li><a href="#">Tuyển dụng</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer-col">
-                            <h4>Sản phẩm</h4>
-                            <ul style="padding-left: 0rem;" class="ft-ul">
-                                <li><a href="#">Áo phông</a></li>
-                                <li><a href="#">Áo sơ mi</a></li>
-                                <li><a href="#">Áo polo</a></li>
-                                <li><a href="#">Quần đùi</a></li>
-                                <li><a href="#">Quần dài</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer-col">
-                            <h4>Hỗ trợ khách hàng</h4>
-                            <ul style="padding-left: 0rem;" class="ft-ul">
-                                <li><a href="#">Chính sách bảo mật</a></li>
-                                <li><a href="#">Chính sách đổi trả</a></li>
-                                <li><a href="#">Chính sách giao hàng</a></li>
-                                <li><a href="#">Hướng dẫn mua hàng</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </footer>
+                       </div>
+                     </div>
+                  </footer>
+                
+                </body>
+              </footer>
           </div>
         </div>
 

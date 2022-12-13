@@ -52,9 +52,7 @@
   display: flex ;
 
 }
-a:hover {
-  background-color: yellow;
-}
+
 .column1{
   width: 35%;
   display: flex;

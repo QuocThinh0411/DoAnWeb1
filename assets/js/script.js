@@ -60,19 +60,18 @@ document.getElementById("click").onclick = function(){
 function kiemtra(){
   var n = document.formtt.n.value;
   var p = document.formtt.p.value;
-  if (n=="") { //quy tắc 1
+  if (n=="") {
     document.getElementById("loi").innerHTML="Vui lòng điền thông tin họ và tên!";
     return false;
 }
-if (p=="") {  //quy tắc 2
+if (p=="") {
     document.getElementById("loi").innerHTML="Vui lòng điền thông tin số điện thoại!";
     return false;
 }
-if (a=="") {  //quy tắc 2
-  document.getElementById("loi").innerHTML="Chưa nhập";
-  return false;
-}
+document.getElementById("loi").innerHTML="";
+window.location="order_list.html"
 return true;
+
 }
 document.getElementById("payment").onclick = function(){
   kiemtra();

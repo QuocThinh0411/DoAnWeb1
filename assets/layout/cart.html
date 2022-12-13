@@ -12,8 +12,6 @@
   <script src="/assets/js/header.js"></script>
   <link rel="stylesheet" href="../css/footer.css">
   <link rel="stylesheet" href="../font_icon/themify-icons/themify-icons.css" type="text/css">
- 
-
   <link rel="stylesheet" type="text/css" href="../font_icon/fontawesome-free-6.2.1-web/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 </head>
@@ -35,7 +33,7 @@
             </ul>
             </li>
             <li><a href="../layout/about.html">About us</a></li>
-            <li><a href="../layout/discount.html">Khuyễn Mãi</a></li>
+            <li><a href="../layout/discount.html">Khuyến Mãi</a></li>
             <li id="none"></li>
             <li>
                  <form action="" id="search-box">
@@ -65,31 +63,57 @@
 
         <div class="payment-form">
 
-          <form action="#">
+          <form action="header.html" name="formtt" onsubmit="return kiemtra()">
 
             <div class="name">
               <label for="name" class="label-default" value>Họ và tên</label>
-              <input type="text" name="name" id="name" class="input-default">
+              <input type="text" name="n" id="name" class="input-default">
             </div>
 
             <div class="phone-number">
               <label for="phone-number" class="label-default">Số điện thoại</label>
-              <input type="number" name="card-number" id="card-number" class="input-default">
+              <input type="number" name="p" id="phone" class="input-default">
             </div>
             <div class="address">
               <label for="address" class="label-default">Địa chỉ giao hàng</label>
-              <select name="calc_shipping_provinces" required="" class="input-default" style="font-size: 14px; padding: 12px 15px ; border: none; margin-right: 20px;">
-                  <option value="">Chọn Tỉnh/Thành phố</option>
-              </select>
-              <select name="calc_shipping_district" required="" class="input-default" style="font-size: 14px; padding: 12px 15px ; border: none; margin-right: 20px;">
-                  <option value="">Chọn Quận/Huyện</option>
-              </select>
-              <input class="billing_address_1" name="" type="hidden" value="">
-              <input class="billing_address_2" name="" type="hidden" value="">
+              <table>
+                <tr>
+                    <td>
+                        <form>
+                            <select name="Tinh" class="input-default" style="font-size: 14px; padding: 12px 15px ; border: none; margin-right: 20px;">
+                            <option value="">Chọn Tỉnh/Thành phố</option>
+                            <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+                            <option value="Hà Nội">Hà Nội</option>
+                            <option value="Gia Lai">Gia Lai</option>
+                            </select>
+                            </form>
+                    </td>
+                    <td>
+                        <form >
+                            <select name="Quan-Huyen" class="input-default" style="font-size: 14px; padding: 12px 15px ; border: none; margin-right: 20px;">
+                            <option value="">Chọn Quận/Huyện</option>
+                            <option value="Quận 1">Quận 1</option>
+                            <option value="Quận 2">Quận 2</option>
+                            <option value="Quận 3">Quận 3</option>
+                            </select>
+                            </form>
+                    </td>
+                    <td>
+                        <form>
+                            <select name="Thixa" class="input-default" style="font-size: 14px; padding: 12px 15px ; border: none; margin-right: 20px;">
+                            <option value="">Chọn Phường/Xã</option>
+                            <option value="Phường Bến Nghé">Phường Bến Nghé</option>
+                            <option value="Phường Bến Nghé">Phường Bến Nghé</option>
+                            <option value="Phường Bến Nghé">Phường Bến Nghé</option>
+                            </select>
+                            </form>
+                    </td>
+                </tr>
+            </table>
           </div> <br>
             <div class="address-number">
-                <label for="address-number" class="label-default">Số nhà cụ thể</label>
-                <input type="address-number" name="address-number" id="address-number" class="input-default">
+                <label for="note" class="label-default">Lưu ý thêm về đơn hàng</label>
+                <input type="note" name="note" id="noteorder" class="input-default">
               </div>
 
           </form>
@@ -122,9 +146,12 @@
                   </button>
       
                 </div>
-        <button class="btn btn-primary">
-          <b>Đặt hàng</b></span>
-        </button>
+        <a >
+          <button class="btn btn-primary" id="payment">
+            <b>Đặt hàng</b></span>
+          </button>
+          <span id="loi" class="thongbao"></span>
+        </a>
 
       </section>
       <section class="cart">
@@ -276,10 +303,11 @@
 
             <div class="wrapper-flex">
 
-              <input type="text" name="discount-token" id="discount-token" class="input-default">
-
-              <button class="btn btn-outline"><b>Chọn</b> </button>
-
+              <select name="calc_shipping_provinces" id="giamgia" required="" class="input-default" style="font-size: 14px; padding: 12px 15px ; border: none; margin-right: 20px;">
+                <option value="15000">Mã giảm giá 15000 cho đơn hàng đầu tiên</option>
+                <option value="30000">Mã giảm giá 30000 siêu sale cuối năm</option>
+              </select>
+              <button class="btn btn-primary" id="click" type="button"><b>Chọn</b> </button>
             </div>
 
           </div>
@@ -299,7 +327,7 @@
             </div>
 
             <div class="total">
-              <span>Tạm tính</span> <span id="total">378000 VND</span>
+              <span>Tổng thanh toán</span> <span id="total">363000 VND</span>
             </div>
 
           </div>
@@ -314,9 +342,6 @@
   <script src="../js/script.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script src="../js/address.js"></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'> </script>
-  <script src='https://cdn.jsdelivr.net/gh/vietblogdao/js/districts.min.js'> </script>
   
 
 </body>
@@ -346,31 +371,30 @@
            </div>
               
            <div class="footer-col">
-             <h4>Về SunHappy </h4>
+             <h4>SunHappy </h4>
              <ul class="ft-ul">
-               <li><a href="#">Câu chuyện SunHappy</a></li>
-               <li><a href="#">Nhà máy</a></li>
-                      <li><a href="#">Về sản phẩm</a></li>
-               <li><a href="#">Tuyển dụng</a></li>
+               <li><a href="../../index.html">Trang chủ</a></li>
+               <li><a href="about.html">About us</a></li>
+               <li><a href="discount.html">Khuyến mãi</a></li>
+               <li><a href="cart.html">Giỏ hàng</a></li>
              </ul>
            </div>
            <div class="footer-col">
              <h4>Sản phẩm</h4>
              <ul class="ft-ul">
-               <li><a href="#">Áo phông</a></li>
-               <li><a href="#">Áo sơ mi</a></li>
-               <li><a href="#">Áo polo</a></li>
-               <li><a href="#">Quần đùi</a></li>
-                         <li><a href="#">Quần dài</a></li>
+               <li><a href="danhmucsp_quanshort.html">Quần short</a></li>
+               <li><a href="danhmucsp_aosomi.html">Áo sơ mi</a></li>
+               <li><a href="danhmucsp_aopolo.html">Áo polo</a></li>
              </ul>
            </div>
            <div class="footer-col">
-                  <h4>Hỗ trợ khách hàng</h4>
+                  <h4>Quản lý tài khoản</h4>
                   <ul class="ft-ul">
-                      <li><a href="#">Chính sách bảo mật</a></li>
-                      <li><a href="#">Chính sách đổi trả</a></li>
-                      <li><a href="#">Chính sách giao hàng</a></li>
-                      <li><a href="#">Hướng dẫn mua hàng</a></li>
+                      <li><a href="personal information.html">Thông tin cá nhân</a></li>
+                      <li><a href="order_list.html">Danh sách đơn hàng</a></li>
+                      <li><a href="register.html">Đăng xuất</a></li>
+                      <br> <br>
+                      <li><img width="160dp" height="60dp" src="../image/bo-cong-thuong-1170x780.png"></li>
                   </ul>
               </div>
          </div>

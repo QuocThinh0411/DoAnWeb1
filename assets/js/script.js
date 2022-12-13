@@ -7,6 +7,7 @@ const subtotal = document.querySelector('#subtotal');
 const discount = document.querySelector('#discount');
 const total = document.querySelector('#total');
 const shipping = document.querySelector('#shipping');
+const giamgia = document.querySelector('#giamgia');
 
 
 for (let i = 0; i < incrementBtn.length; i++) {
@@ -35,21 +36,44 @@ function totalCalc() {
 
   let subtotalValue = 0;
   let totalValue = 0;
+  let discountValue = 0;
 
   for (let i = 0; i < quantityProduct.length; i++) {
 
     subtotalValue += Number(quantityProduct[i].textContent) * Number(priceProduct[i].textContent);
   }
-
   subtotal.textContent = subtotalValue;
 
-  totalValue = subtotalValue - Number(discount.textContent) + Number(shipping.textContent);
+let a = document.getElementById("giamgia");
+discountValue = a.value;
+discount.textContent = discountValue;
+
+
+  totalValue = subtotalValue - discountValue + Number(shipping.textContent);
 
   total.textContent = totalValue.toFixed() + " VND";
 }
 
-// function totalCalc(){
-
-
-
-// }
+document.getElementById("click").onclick = function(){
+  totalCalc();
+}
+function kiemtra(){
+  var n = document.formtt.n.value;
+  var p = document.formtt.p.value;
+  if (n=="") { //quy tắc 1
+    document.getElementById("loi").innerHTML="Vui lòng điền thông tin họ và tên!";
+    return false;
+}
+if (p=="") {  //quy tắc 2
+    document.getElementById("loi").innerHTML="Vui lòng điền thông tin số điện thoại!";
+    return false;
+}
+if (a=="") {  //quy tắc 2
+  document.getElementById("loi").innerHTML="Chưa nhập";
+  return false;
+}
+return true;
+}
+document.getElementById("payment").onclick = function(){
+  kiemtra();
+}

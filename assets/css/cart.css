@@ -354,6 +354,12 @@
       width: 100%;
       border-bottom: 1px solid var(--gainsboro);
     }
+    
+    .thongbao{
+      color: rgb(201, 13, 13);
+      padding-top: 20px;
+      padding-left: 20px;
+    }
   
     .cart .wrapper { margin-top: auto; }
   

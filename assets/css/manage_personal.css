@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap');
 
 #orderlist_footer{
 width: 100%;
@@ -29,8 +29,12 @@ height: 100%;
   .list-information{
     width: 30%;
     margin-left: 20px;
-    padding: 40px var(--px);
+    padding: 40px;
     border-right: 1px;
+    padding-bottom: 5px;
+  }
+  h2{
+    padding-bottom: 20px;
   }
   .list-form { margin-bottom: 40px;}
   

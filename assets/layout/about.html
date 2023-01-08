@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ABOUT US</title>
+    <link rel="stylesheet" href="../css/headerabout.css">
     
     <link rel="stylesheet" href="../css/aboutus.css">
     <script src="https://www.w3schools.com/lib/w3.js"></script>
@@ -14,7 +15,45 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 </head>
 <body>
-    <div class="header_about">
+  <div id="header">
+    <header class="row">
+        <ul id="nav">
+            <li><a href="../../index.html"><img id="logo" src="../image/logo (7).png"></a></li>
+            <li id="none"></li>
+            <li>
+                <a href="../layout/danhmucsp.html"> Danh sách 
+                    <i class="ti-angle-down"></i>
+                     </a>
+                <ul class="subnav">
+                    <li><a href="../layout/danhmucsp_quanshort.html">Quần short</a></li>
+                    <li><a href="../layout/danhmucsp_aosomi.html">Áo sơ mi</a></li>
+                    <li><a href="../layout/danhmucsp_aopolo.html">Áo polo</a></li>
+            </ul>
+            </li>
+            <li><a href="../layout/about.html">About us</a></li>
+            <li><a href="../layout/discount.html">Khuyến Mãi</a></li>
+            <li id="none"></li>
+            <li>
+                 <form action="" id="search-box">
+                    
+                    <input placeholder="Điền tên sản phẩm" type="text" id="search-text">
+                    <button id="search-btn"><i class="ti-search"></i></button>
+                </form>
+            </li>
+            
+            <li><a href="../layout/cart.html"><i class="shopping-cart-icon ti-shopping-cart"></i></a></li>
+            <li><a href="../layout/login.html"><i class="user-icon ti-user"></i></a>
+                <ul class="subnav" id="whenlogin" >
+                   
+                    <li><a href="../layout/account.html">Tài khoản </a></li>
+                    <li><a onclick="dangxuat()" >Đăng xuất</a></li>
+
+            </ul></li>
+        </ul>
+    </header>
+</div>
+
+    <div class="about">
         <p>Câu chuyện về SunHappy</p>
         <br>
         <p style="font-size: 20px;">Đây là chuyên mục giúp các bạn biết được SunHappy đã hình thành ra sao và chúng tôi muốn xây dựng một công ty như thế nào!</p>
@@ -50,9 +89,9 @@
             <img class="img2" src="https://img.freepik.com/free-photo/millennial-group-young-businesspeople-asia-businessman-businesswoman-celebrate-giving-five-after-dealing-feeling-happy-signing-contract-agreement-meeting-room-small-modern-office_7861-2516.jpg?w=900&t=st=1670666978~exp=1670667578~hmac=56b1f6bbb7b1391157f417576c27c8062497a58a21befa255259b38fc7f153ccs" alt="Loading..." >
         </div>
         <div class="box__right">
-          <h3 style="color: blue; font-size: 30px;">Câu chuyện CHĂM SÓC KHÁCH HÀNG  
+          <h3 style="color: #ffd24c; font-size: 30px;">Câu chuyện CHĂM SÓC KHÁCH HÀNG  
             <br> của đội ngũ nhà SunHappy </h3><br>
-          <hr width="30%" height="20%" color="blue">
+          <hr width="30%" height="20%" color="#ffd24c">
           <br>
             <p>“SunHappy sinh ra với mong muốn trở thành điển hình về mô hình DOANH NGHIỆP TRÁCH NHIỆM bằng cách vừa làm kinh doanh bài bản, có lợi nhuận và đồng thời mang lại những giá trị thiết thực và lâu dài cho khách hàng, cho nhân viên, cho đối tác, cho cộng đồng, xã hội và cho cổ đông"
             </p><br>
@@ -68,8 +107,8 @@
     </div>
     <div class="container">
       <div class="box__right">
-        <h3 style="color: blue; font-size: 30px;">Chính sách GIAO HÀNG  và quy định ĐỔI TRẢ </h3><br>
-        <hr width="30%" height="20%" color="blue">
+        <h3 style="color: #ffd24c; font-size: 30px;">Chính sách GIAO HÀNG  và quy định ĐỔI TRẢ </h3><br>
+        <hr width="30%" height="20%" color="#ffd24c">
         <br>
           <p>Nhằm đáp ứng nhu cầu và bảo vệ tối đa quyền lợi khách hàng khi sử dụng dịch vụ của SunHappy. SunHappyđã triển khai chính sách hỗ trợ việc xem và kiểm tra hàng hóa khi giao hàng.
           </p><br>

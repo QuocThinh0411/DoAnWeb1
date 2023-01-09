@@ -69,7 +69,7 @@
     justify-content: center;
     align-items: center;
     font-size: 30px;
-    color: blue;
+    color:#ffd24c;
     font-weight: 700;
     margin: 20px;
   }
@@ -81,7 +81,7 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
-.header_about{
+.about{
     width: 100%;
     height: 100vh;
     background-image:   linear-gradient(0, rgba(0, 0, 0, 0.75),rgba(35, 35, 35, 0.5)),
@@ -104,7 +104,6 @@
   color: white;
   padding-top: 50px;
   padding-inline-end: 20px;
-
   font-size: 25px;
 
 }
@@ -113,7 +112,7 @@
     width: 100%;
     height: 80%;
     padding: 30px;
-    background-color: rgb(47, 47, 185);
+    background-color: #ffd24c;
     color: white;
     padding-top: 50px;
     margin-bottom: 5px;
@@ -171,7 +170,7 @@ font-size: 25px;
 }
 .box__left div{
 font-size: 30px;
-color: blue;
+color: #ffd24c;
 margin-left: 100px;
 padding: 20px 50px;
 }
